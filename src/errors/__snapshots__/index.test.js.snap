@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ErrorWrapper /> renders: one SingleError for errors="ONE ERROR" 1`] = `
+<div
+  className="msg msg--error"
+>
+  ONE ERROR
+</div>
+`;
+
+exports[`<MultipleErrors /> renders: one SingleError element for value=[SINGLE ERROR] 1`] = `
+<div>
+  <div
+    className="msg msg--error"
+  >
+    SINGLE ERROR
+  </div>
+</div>
+`;
+
+exports[`<MultipleErrors /> renders: two SingleError elements for value=[FIRST, SECOND] 1`] = `
+<div>
+  <div
+    className="msg msg--error"
+  >
+    FIRST
+  </div>
+  <div
+    className="msg msg--error"
+  >
+    SECOND
+  </div>
+</div>
+`;
+
+exports[`<SingleError /> renders: single div.msg--errorvalue=string 1`] = `
+<div
+  className="msg msg--error"
+>
+  ERROR
+</div>
+`;
