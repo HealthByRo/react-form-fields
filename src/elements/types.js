@@ -16,7 +16,8 @@ export type LabelElementProps = {
 };
 
 export type TextFieldElementProps = {
+  className?: string,
+  inputId: InputId,
   placeholder?: string,
   value?: string,
-  inputId: InputId,
 };

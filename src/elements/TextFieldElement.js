@@ -1,14 +1,27 @@
 /* @flow */
 
-import React from 'react';
+import React, { PureComponent } from 'react';
 import type { TextFieldElementProps } from './types';
 
-export default function TextFieldElement(props: TextFieldElementProps) {
-  return (
-    <input
-      type="text"
-      placeholder={props.placeholder}
-      className="textfield"
-    />
-  );
+export default class TextFieldElement extends PureComponent {
+  static defaultProps = {
+    className: 'textfield',
+  };
+
+  props: TextFieldElementProps;
+
+  render() {
+    const {
+      placeholder,
+      className,
+    } = this.props;
+
+    return (
+      <input
+        type="text"
+        placeholder={placeholder}
+        className={className}
+      />
+    );
+  }
 }
