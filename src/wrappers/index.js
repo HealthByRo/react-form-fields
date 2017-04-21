@@ -6,4 +6,4 @@ import FieldWrapper from './FieldWrapper';
 export {
   ErrorsListWrapper,
   FieldWrapper,
-}
+};

@@ -4,11 +4,11 @@ import React, { PureComponent } from 'react';
 import type { ErrorElementProps } from './types';
 
 export default class ErrorElement extends PureComponent {
-  props: ErrorElementProps;
-
-  static defautlProps = {
+  static defaultProps = {
     className: 'msg msg--error',
   };
+
+  props: ErrorElementProps;
 
   render() {
     const {

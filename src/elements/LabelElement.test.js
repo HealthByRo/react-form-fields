@@ -14,11 +14,6 @@ describe('<LabelElement />', () => {
       <LabelElement {...props} />
     );
   };
-  const renderWithErrors = (props = defaultProps) => {
-    wrapper = renderer.create(
-      <LabelElement {...props} />
-    );
-  };
   const AnyChild = () => <div>AnyChild</div>;
 
   describe('html element', () => {
@@ -34,7 +29,6 @@ describe('<LabelElement />', () => {
       expect(wrapper.props().htmlFor).toBeDefined();
       expect(wrapper.props().htmlFor).toBe('INPUT_ID');
     });
-
   });
 
   describe('content', () => {
@@ -47,7 +41,7 @@ describe('<LabelElement />', () => {
     it('should have {children} if passed', () => {
       wrapper = shallow(
         <LabelElement {...defaultProps}>
-          <AnyChild/>
+          <AnyChild />
         </LabelElement>
       );
 
@@ -57,7 +51,7 @@ describe('<LabelElement />', () => {
     it('should render {children} before label text', () => {
       wrapper = renderer.create(
         <LabelElement {...defaultProps}>
-          <AnyChild/>
+          <AnyChild />
         </LabelElement>
       );
 

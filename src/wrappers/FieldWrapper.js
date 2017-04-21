@@ -4,11 +4,11 @@ import React, { PureComponent } from 'react';
 import type { WrapperProps } from './types';
 
 export default class FieldWrapper extends PureComponent {
-  props: WrapperProps;
-
   static defaultProps = {
-    className: "form-item",
+    className: 'form-item',
   };
+
+  props: WrapperProps;
 
   render() {
     const {
