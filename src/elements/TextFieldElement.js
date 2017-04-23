@@ -8,6 +8,7 @@ const TextFieldElement = (props: TextFieldElementProps) => (
     type="text"
     placeholder={props.placeholder}
     className={props.className}
+    id={props.inputId}
   />
 );
 // TODO figure out a better way of using defaults in stateless component

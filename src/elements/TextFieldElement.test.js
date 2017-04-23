@@ -48,5 +48,14 @@ describe('<TextFieldElement />', () => {
 
       expect(wrapper.is('[placeholder="PLACEHOLDER"]')).toBe(true);
     });
+
+    it('should use id from props.inputId', () => {
+      shallowWithProps({
+        ...defaultProps,
+        inputId: 'INPUT_ID',
+      });
+
+      expect(wrapper.is('[id="INPUT_ID"]')).toBe(true);
+    });
   });
 });
