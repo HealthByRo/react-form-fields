@@ -1,27 +1,18 @@
 /* @flow */
 
-import React, { PureComponent } from 'react';
+import React from 'react';
 import type { TextFieldElementProps } from './types';
 
-export default class TextFieldElement extends PureComponent {
-  static defaultProps = {
-    className: 'textfield',
-  };
+const TextFieldElement = (props: TextFieldElementProps) => (
+  <input
+    type="text"
+    placeholder={props.placeholder}
+    className={props.className}
+  />
+);
+// TODO figure out a better way of using defaults in stateless component
+TextFieldElement.defaultProps = {
+  className: 'textfield',
+};
 
-  props: TextFieldElementProps;
-
-  render() {
-    const {
-      placeholder,
-      className,
-    } = this.props;
-
-    return (
-      <input
-        type="text"
-        placeholder={placeholder}
-        className={className}
-      />
-    );
-  }
-}
+export default TextFieldElement;

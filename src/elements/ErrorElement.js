@@ -1,25 +1,16 @@
 /* @flow */
 
-import React, { PureComponent } from 'react';
+import React from 'react';
 import type { ErrorElementProps } from './types';
 
-export default class ErrorElement extends PureComponent {
-  static defaultProps = {
-    className: 'msg msg--error',
-  };
+const ErrorElement = (props: ErrorElementProps) => (
+  <div className={props.className}>
+    {props.children}
+  </div>
+);
+// TODO figure out a better way of using defaults in stateless component
+ErrorElement.defaultProps = {
+  className: 'msg msg--error',
+};
 
-  props: ErrorElementProps;
-
-  render() {
-    const {
-      className,
-      children,
-    } = this.props;
-
-    return (
-      <div className={className}>
-        {children}
-      </div>
-    );
-  }
-}
+export default ErrorElement;
