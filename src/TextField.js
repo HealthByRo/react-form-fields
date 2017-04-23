@@ -1,49 +1,23 @@
 /* @flow */
 
-import React, { PureComponent } from 'react';
-import { LabelElement, TextFieldElement } from './elements';
-import { FieldWrapper } from './wrappers';
-import Errors from './Errors';
+import React from 'react';
+import BaseField from './BaseField';
+import { TextFieldElement } from './elements';
 import type { FieldProps } from './types';
 
-export default class TextField extends PureComponent {
-  constructor(props: FieldProps) {
-    super(props);
-
-    if (!props.name || props.name.length < 1) {
-      // TODO create file with errors, add MissingParamError
-      throw new Error('name param is required for TextField');
-    }
+export default class TextField extends BaseField {
+  throwMissingNameError() {
+    // TODO create file with errors, add MissingParamError
+    throw new Error('name param is required for TextField');
   }
 
-  composeProps(): FieldProps {
-    const props = { ...this.props };
-
-    if (!props.inputId) {
-      props.inputId = this.generateInputId(props);
-    }
-
-    return props;
+  renderFieldElement(props: FieldProps) {
+    return (
+      <TextFieldElement {...props} />
+    );
   }
-
-  // TODO add some unique id at the end
-  generateInputId(props: FieldProps): string {
-    return `TF-${props.name}`;
-  }
-
-  props: FieldProps;
 
   render() {
-    const props = this.composeProps();
-
-    return (
-      <FieldWrapper>
-        {props.label &&
-          <LabelElement {...props} />
-        }
-        <TextFieldElement {...props} />
-        <Errors {...this.props} />
-      </FieldWrapper>
-    );
+    return super.renderWithField(this.renderFieldElement);
   }
 }
