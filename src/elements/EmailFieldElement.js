@@ -1,19 +1,11 @@
 /* @flow */
 
 import React from 'react';
+import { composeInputProps } from './helpers';
 import type { InputProps, TextFieldElementProps } from './types';
 
 const EmailFieldElement = (props: TextFieldElementProps) => {
-  const inputProps: InputProps = {
-    id: props.inputId,
-    type: 'email',
-    name: props.name,
-    className: props.className,
-  };
-
-  if (props.placeholder) {
-    inputProps.placeholder = props.placeholder;
-  }
+  const inputProps: InputProps = composeInputProps('email', props);
 
   return (
     <input {...inputProps} />

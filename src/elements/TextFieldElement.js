@@ -1,19 +1,11 @@
 /* @flow */
 
 import React from 'react';
+import { composeInputProps } from './helpers';
 import type { InputProps, TextFieldElementProps } from './types';
 
 const TextFieldElement = (props: TextFieldElementProps) => {
-  const inputProps: InputProps = {
-    id: props.inputId,
-    type: 'text',
-    name: props.name,
-    className: props.className,
-  };
-
-  if (props.placeholder) {
-    inputProps.placeholder = props.placeholder;
-  }
+  const inputProps: InputProps = composeInputProps('text', props);
 
   return (
     <input {...inputProps} />
