@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import Errors from '../src/Errors';
 
-storiesOf('Helpers.Errors', module)
+storiesOf('Helpers: Errors', module)
   .add('No errors', () => (
     <Errors />
   ))
