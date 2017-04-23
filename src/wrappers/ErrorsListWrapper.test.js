@@ -1,11 +1,14 @@
+/* @flow */
+
 import React from 'react';
 import { shallow } from 'enzyme';
 import ErrorsListWrapper from './ErrorsListWrapper';
+import type { WrapperProps } from './types';
 
 describe('<ErrorsListWrapper />', () => {
   let wrapper;
   const AnyChild = () => <div>AnyChild</div>;
-  const shallowWithProps = (props = {}) => {
+  const shallowWithProps = (props: WrapperProps = {}) => {
     wrapper = shallow(
       <ErrorsListWrapper {...props}>
         <AnyChild />

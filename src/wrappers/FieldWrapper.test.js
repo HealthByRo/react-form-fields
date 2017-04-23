@@ -1,11 +1,14 @@
+/* @flow */
+
 import React from 'react';
 import { shallow } from 'enzyme';
 import FieldWrapper from './FieldWrapper';
+import type { WrapperProps } from './types';
 
 describe('<FieldWrapper />', () => {
   let wrapper;
   const AnyChild = () => <div>AnyChild</div>;
-  const shallowWithProps = (props = {}) => {
+  const shallowWithProps = (props: WrapperProps = {}) => {
     wrapper = shallow(
       <FieldWrapper {...props}>
         <AnyChild />
