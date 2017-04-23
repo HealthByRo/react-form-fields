@@ -1,25 +1,16 @@
 /* @flow */
 
-import React, { PureComponent } from 'react';
+import React from 'react';
 import type { WrapperProps } from './types';
 
-export default class FieldWrapper extends PureComponent {
-  static defaultProps = {
-    className: 'form-item',
-  };
+const FieldWrapper = (props: WrapperProps) => (
+  <div className={props.className}>
+    {props.children}
+  </div>
+);
+// TODO figure out a better way of using defaults in stateless component
+FieldWrapper.defaultProps = {
+  className: 'form-item',
+};
 
-  props: WrapperProps;
-
-  render() {
-    const {
-      className,
-      children,
-    } = this.props;
-
-    return (
-      <div className={className}>
-        {children}
-      </div>
-    );
-  }
-}
+export default FieldWrapper;

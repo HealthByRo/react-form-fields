@@ -1,25 +1,16 @@
 /* @flow */
 
-import React, { PureComponent } from 'react';
+import React from 'react';
 import type { WrapperProps } from './types';
 
-export default class ErrorsListWrapper extends PureComponent {
-  static defaultProps = {
-    className: 'errors-list',
-  };
+const ErrorsListWrapper = (props: WrapperProps) => (
+  <div className={props.className}>
+    {props.children}
+  </div>
+);
+// TODO figure out a better way of using defaults in stateless component
+ErrorsListWrapper.defaultProps = {
+  className: 'errors-list',
+};
 
-  props: WrapperProps;
-
-  render() {
-    const {
-      className,
-      children,
-    } = this.props;
-
-    return (
-      <div className={className}>
-        {children}
-      </div>
-    );
-  }
-}
+export default ErrorsListWrapper;
