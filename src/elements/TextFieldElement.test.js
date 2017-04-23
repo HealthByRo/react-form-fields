@@ -21,7 +21,7 @@ describe('<TextFieldElement />', () => {
       shallowWithProps();
 
       expect(wrapper.name()).toBe('input');
-      expect(wrapper.is('[type="text"]')).toBe(true);
+      expect(wrapper.props().type).toEqual('text');
     });
 
     it('should have .textfield by default', () => {
@@ -46,7 +46,7 @@ describe('<TextFieldElement />', () => {
         placeholder: 'PLACEHOLDER',
       });
 
-      expect(wrapper.is('[placeholder="PLACEHOLDER"]')).toBe(true);
+      expect(wrapper.props().placeholder).toEqual('PLACEHOLDER');
     });
 
     it('should use id from props.inputId', () => {
@@ -55,7 +55,7 @@ describe('<TextFieldElement />', () => {
         inputId: 'INPUT_ID',
       });
 
-      expect(wrapper.is('[id="INPUT_ID"]')).toBe(true);
+      expect(wrapper.props().id).toEqual('INPUT_ID');
     });
   });
 });

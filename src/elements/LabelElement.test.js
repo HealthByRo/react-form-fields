@@ -30,7 +30,7 @@ describe('<LabelElement />', () => {
       shallowWithProps();
 
       expect(wrapper.props().htmlFor).toBeDefined();
-      expect(wrapper.props().htmlFor).toBe('INPUT_ID');
+      expect(wrapper.props().htmlFor).toEqual('INPUT_ID');
     });
   });
 
