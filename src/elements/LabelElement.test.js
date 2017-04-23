@@ -1,7 +1,10 @@
+/* @flow */
+
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 import LabelElement from './LabelElement';
+import type { LabelElementProps } from './types';
 
 describe('<LabelElement />', () => {
   let wrapper;
@@ -9,7 +12,7 @@ describe('<LabelElement />', () => {
     inputId: 'INPUT_ID',
     label: 'FIELD_LABEL',
   };
-  const shallowWithProps = (props = defaultProps) => {
+  const shallowWithProps = (props: LabelElementProps = defaultProps) => {
     wrapper = shallow(
       <LabelElement {...props} />
     );

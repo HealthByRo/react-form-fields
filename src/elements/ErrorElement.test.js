@@ -1,12 +1,14 @@
+/* @flow */
+
 import React from 'react';
-// import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 import ErrorElement from './ErrorElement';
+import type { ErrorElementProps } from './types';
 
 describe('<ErrorElement />', () => {
   let wrapper;
   const AnyChild = () => <div>AnyChild</div>;
-  const shallowWithProps = (props = {}) => {
+  const shallowWithProps = (props: ErrorElementProps = {}) => {
     wrapper = shallow(
       <ErrorElement {...props}>
         <AnyChild />

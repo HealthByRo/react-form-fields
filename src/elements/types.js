@@ -2,8 +2,6 @@
 
 import type { Children } from 'react';
 
-type InputId = string;
-
 export type ErrorElementProps = {
   className?: string,
   children?: Children,
@@ -12,12 +10,12 @@ export type ErrorElementProps = {
 export type LabelElementProps = {
   children?: Children,
   label: string,
-  inputId: InputId,
+  inputId: string,
 };
 
 export type TextFieldElementProps = {
   className?: string,
-  inputId: InputId,
+  inputId: string,
   placeholder?: string,
   value?: string,
 };

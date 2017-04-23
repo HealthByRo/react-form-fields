@@ -1,11 +1,16 @@
+/* @flow */
+
 import React from 'react';
-// import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 import TextFieldElement from './TextFieldElement';
+import type { TextFieldElementProps } from './types';
 
 describe('<TextFieldElement />', () => {
   let wrapper;
-  const shallowWithProps = (props = {}) => {
+  const defaultProps = {
+    inputId: 'INPUT_ID',
+  };
+  const shallowWithProps = (props: TextFieldElementProps = defaultProps) => {
     wrapper = shallow(
       <TextFieldElement {...props} />
     );
@@ -27,6 +32,7 @@ describe('<TextFieldElement />', () => {
 
     it('should use className from props', () => {
       shallowWithProps({
+        ...defaultProps,
         className: 'CSS_CLASS',
       });
 
@@ -36,6 +42,7 @@ describe('<TextFieldElement />', () => {
 
     it('should use placeholder from props', () => {
       shallowWithProps({
+        ...defaultProps,
         placeholder: 'PLACEHOLDER',
       });
 
