@@ -2,10 +2,10 @@ import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import TextField from '../src/TextField';
 
-storiesOf('Fields.TextField', module)
+storiesOf('Fields: TextField', module)
   .add('input', () => {
     const props = {
-      inputId: 'ID-I',
+      name: 'TEXT_FIELD_NAME',
     };
 
     return (
@@ -14,8 +14,8 @@ storiesOf('Fields.TextField', module)
   })
   .add('input + placeholder', () => {
     const props = {
-      inputId: 'ID-IP',
-      placeholder: 'Sample input field with placeholder',
+      name: 'TEXT_FIELD_NAME',
+      placeholder: 'Sample text field with placeholder',
     };
 
     return (
@@ -25,8 +25,8 @@ storiesOf('Fields.TextField', module)
   .add('input + placeholder + error', () => {
     const props = {
       errors: ['Sample error for field'],
-      inputId: 'ID-IPE',
-      placeholder: 'Sample input field with placeholder',
+      name: 'TEXT_FIELD_NAME',
+      placeholder: 'Sample text field with placeholder',
     };
 
     return (
@@ -39,8 +39,8 @@ storiesOf('Fields.TextField', module)
         'First error for field',
         'Second error for field',
       ],
-      inputId: 'ID-IPES',
-      placeholder: 'Sample input field with placeholder',
+      name: 'TEXT_FIELD_NAME',
+      placeholder: 'Sample text field with placeholder',
     };
 
     return (
@@ -49,7 +49,7 @@ storiesOf('Fields.TextField', module)
   })
   .add('input + label', () => {
     const props = {
-      inputId: 'ID-IL',
+      name: 'TEXT_FIELD_NAME',
       label: 'Sample label',
     };
 
@@ -60,7 +60,7 @@ storiesOf('Fields.TextField', module)
   .add('input + label + error', () => {
     const props = {
       errors: ['Sample error for field'],
-      inputId: 'ID-ILE',
+      name: 'TEXT_FIELD_NAME',
       label: 'Sample label',
     };
 
@@ -74,7 +74,7 @@ storiesOf('Fields.TextField', module)
         'First error for field',
         'Second error for field',
       ],
-      inputId: 'ID-ILES',
+      name: 'TEXT_FIELD_NAME',
       label: 'Sample label',
     };
 
@@ -84,9 +84,9 @@ storiesOf('Fields.TextField', module)
   })
   .add('input + label + placeholder', () => {
     const props = {
-      inputId: 'ID-ILP',
+      name: 'TEXT_FIELD_NAME',
       label: 'Sample label',
-      placeholder: 'Sample input field with placeholder',
+      placeholder: 'Sample text field with placeholder',
     };
 
     return (
@@ -96,9 +96,9 @@ storiesOf('Fields.TextField', module)
   .add('input + label + placeholder + error', () => {
     const props = {
       errors: ['Sample error for field'],
-      inputId: 'ID-ILPE',
+      name: 'TEXT_FIELD_NAME',
       label: 'Sample label',
-      placeholder: 'Sample input field with placeholder',
+      placeholder: 'Sample text field with placeholder',
     };
 
     return (
@@ -111,9 +111,9 @@ storiesOf('Fields.TextField', module)
         'First error for field',
         'Second error for field',
       ],
-      inputId: 'ID-ILPES',
+      name: 'TEXT_FIELD_NAME',
       label: 'Sample label',
-      placeholder: 'Sample input field with placeholder',
+      placeholder: 'Sample text field with placeholder',
     };
 
     return (
