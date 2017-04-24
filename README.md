@@ -1,7 +1,7 @@
-[![bitHound Overall Score](https://www.bithound.io/bitbucket/arabellatech/react-sample-component/badges/score.svg)](https://www.bithound.io/bitbucket/arabellatech/react-sample-component)
-[![bitHound Dependencies](https://www.bithound.io/bitbucket/arabellatech/react-sample-component/badges/dependencies.svg)](https://www.bithound.io/bitbucket/arabellatech/react-sample-component/develop/dependencies/npm)
-[![bitHound Dev Dependencies](https://www.bithound.io/bitbucket/arabellatech/react-sample-component/badges/devDependencies.svg)](https://www.bithound.io/bitbucket/arabellatech/react-sample-component/develop/dependencies/npm)
-[![bitHound Code](https://www.bithound.io/bitbucket/arabellatech/react-sample-component/badges/code.svg)](https://www.bithound.io/bitbucket/arabellatech/react-sample-component)
+[![bitHound Overall Score](https://www.bithound.io/bitbucket/arabellatech/react-form-fields/badges/score.svg)](https://www.bithound.io/bitbucket/arabellatech/react-form-fields)
+[![bitHound Dependencies](https://www.bithound.io/bitbucket/arabellatech/react-form-fields/badges/dependencies.svg)](https://www.bithound.io/bitbucket/arabellatech/react-form-fields/develop/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/bitbucket/arabellatech/react-form-fields/badges/devDependencies.svg)](https://www.bithound.io/bitbucket/arabellatech/react-form-fields/develop/dependencies/npm)
+[![bitHound Code](https://www.bithound.io/bitbucket/arabellatech/react-form-fields/badges/code.svg)](https://www.bithound.io/bitbucket/arabellatech/react-form-fields)
 
 ## Quick start
 
