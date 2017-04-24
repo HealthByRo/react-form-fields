@@ -1,3 +1,8 @@
+[![bitHound Overall Score](https://www.bithound.io/bitbucket/arabellatech/react-form-fields/badges/score.svg)](https://www.bithound.io/bitbucket/arabellatech/react-form-fields)
+[![bitHound Dependencies](https://www.bithound.io/bitbucket/arabellatech/react-file-upload/badges/dependencies.svg)](https://www.bithound.io/bitbucket/arabellatech/react-file-upload/develop/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/bitbucket/arabellatech/react-file-upload/badges/devDependencies.svg)](https://www.bithound.io/bitbucket/arabellatech/react-file-upload/develop/dependencies/npm)
+[![bitHound Code](https://www.bithound.io/bitbucket/arabellatech/react-file-upload/badges/code.svg)](https://www.bithound.io/bitbucket/arabellatech/react-file-upload)
+
 ## Quick start
 
 ## Install example component in your-project
