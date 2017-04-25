@@ -15,7 +15,10 @@ export default class BaseField extends PureComponent {
     }
   }
 
-  throwMissingNameError() {}
+  throwMissingNameError() {
+    // TODO create file with errors, add MissingParamError
+    throw new Error(`name param is required for ${this.constructor.name}`);
+  }
 
   composeProps(): FieldProps {
     const props = { ...this.props };
