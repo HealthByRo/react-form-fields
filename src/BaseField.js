@@ -46,7 +46,7 @@ export default class BaseField extends PureComponent {
           <LabelElement {...props} />
         }
         {fieldRender(props)}
-        <Errors {...this.props} />
+        <Errors {...props} />
       </FieldWrapper>
     );
   }
