@@ -2,7 +2,6 @@
   "name": "react-form-fields",
   "version": "1.0.0",
   "description": "An example of how to start a new React Component in Arabella style",
-  "jsnext:main": "src/",
   "repository": "git@bitbucket.org:arabellatech/react-form-fields.git",
   "author": "Michal Mrowiec <michal.mrowiec@simplesoft.pl>",
   "license": "MIT",
