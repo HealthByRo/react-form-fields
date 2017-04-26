@@ -120,7 +120,9 @@
     ],
     "testRegex": "src/.*\\.test[s]?\\.js$"
   },
-  "dependencies": {},
+  "dependencies": {
+    "moment": "^2.18.1"
+  },
   "peerDependencies": {
     "react": "15.x"
   },
