@@ -40,4 +40,8 @@ MonthSelectBox.propTypes = {
   mode: PropTypes.string,
 };
 
+MonthSelectBox.defaultProps = {
+  mode: 'full',
+};
+
 export default MonthSelectBox;
