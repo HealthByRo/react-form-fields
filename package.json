@@ -1,9 +1,8 @@
 {
-  "name": "arc-sample",
+  "name": "react-form-fields",
   "version": "1.0.0",
   "description": "An example of how to start a new React Component in Arabella style",
-  "main": "lib/index.js",
-  "repository": "git@bitbucket.org:arabellatech/arc-sample.git",
+  "repository": "git@bitbucket.org:arabellatech/react-form-fields.git",
   "author": "Michal Mrowiec <michal.mrowiec@simplesoft.pl>",
   "license": "MIT",
   "scripts": {
@@ -120,7 +119,9 @@
     ],
     "testRegex": "src/.*\\.test[s]?\\.js$"
   },
-  "dependencies": {},
+  "dependencies": {
+    "moment": "^2.18.1"
+  },
   "peerDependencies": {
     "react": "15.x"
   },
