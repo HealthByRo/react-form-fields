@@ -1,9 +1,9 @@
 /* @flow */
 
 import React from 'react';
-import BaseField from './BaseField';
-import { PasswordFieldElement } from './elements';
-import type { FieldProps } from './types';
+import BaseField from '../BaseField';
+import { PasswordFieldElement } from '../elements';
+import type { FieldProps } from '../types';
 
 export default class PasswordField extends BaseField {
   renderFieldElement(props: FieldProps) {

@@ -2,8 +2,8 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
-import PasswordField from './PasswordField';
-import type { FieldProps } from './types';
+import PasswordField from './';
+import type { FieldProps } from '../types';
 
 let tree;
 const placeholder = 'INPUT_PLACEHOLDER';
