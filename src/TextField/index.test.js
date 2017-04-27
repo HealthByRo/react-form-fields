@@ -2,8 +2,8 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
-import TextField from './TextField';
-import type { FieldProps } from './types';
+import TextField from './';
+import type { FieldProps } from '../types';
 
 let tree;
 const placeholder = 'INPUT_PLACEHOLDER';
