@@ -3,9 +3,9 @@
 import React, { PureComponent } from 'react';
 import type { Children } from 'react';
 
-import { ErrorElement } from './elements';
-import { ErrorsListWrapper } from './wrappers';
-import type { ErrorsType, ErrorsProps } from './types';
+import { ErrorElement } from '../elements';
+import { ErrorsListWrapper } from '../wrappers';
+import type { ErrorsType, ErrorsProps } from '../types';
 
 export default class Errors extends PureComponent {
   props: ErrorsProps;

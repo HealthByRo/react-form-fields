@@ -2,9 +2,9 @@
 
 import React from 'react';
 import { shallow } from 'enzyme';
-import ErrorElement from './elements/ErrorElement';
-import Errors from './Errors';
-import type { ErrorsType } from './types';
+import ErrorElement from '../elements/ErrorElement';
+import Errors from './';
+import type { ErrorsType } from '../types';
 
 describe('<Errors />', () => {
   let wrapper;
