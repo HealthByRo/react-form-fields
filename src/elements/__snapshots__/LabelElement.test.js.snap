@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LabelElement /> content should render {children} before label text 1`] = `
+<label
+  htmlFor="INPUT_ID"
+>
+  <div>
+    AnyChild
+  </div>
+  FIELD_LABEL
+</label>
+`;
