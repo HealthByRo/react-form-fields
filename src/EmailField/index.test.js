@@ -2,8 +2,8 @@
 
 import React from 'react';
 import renderer from 'react-test-renderer';
-import EmailField from './EmailField';
-import type { FieldProps } from './types';
+import EmailField from './';
+import type { FieldProps } from '../types';
 
 let tree;
 const placeholder = 'INPUT_PLACEHOLDER';
