@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import TextField from '../src/TextField';
+import TextField from './';
 
 storiesOf('Fields: TextField', module)
   .add('input', () => {

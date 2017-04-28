@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import PasswordField from '../src/PasswordField';
+import PasswordField from './';
 
 storiesOf('Fields: PasswordField', module)
   .add('input', () => {

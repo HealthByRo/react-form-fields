@@ -5,7 +5,7 @@
  */
 import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
-import YearSelectBox from './index';
+import YearSelectBox from './';
 
 storiesOf('YearSelectBox', module)
   .add('with years range 2015-2020', () => (

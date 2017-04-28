@@ -5,7 +5,7 @@
  */
 import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
-import MonthSelectBox from './index';
+import MonthSelectBox from './';
 
 storiesOf('MonthSelectBox', module)
   .add('full month names', () => (

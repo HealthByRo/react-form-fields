@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import Errors from '../src/Errors';
+import Errors from './';
 
 storiesOf('Helpers: Errors', module)
   .add('No errors', () => (

@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import EmailField from '../src/EmailField';
+import EmailField from './';
 
 storiesOf('Fields: EmailField', module)
   .add('input', () => {
