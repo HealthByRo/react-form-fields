@@ -1,10 +1,8 @@
 /* @flow */
 
 import React from 'react';
-import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 import PasswordField from './';
-import createFormField from '../createFormField';
 import type { FieldProps } from '../types';
 
 describe('<PasswordField />', () => {
