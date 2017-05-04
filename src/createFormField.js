@@ -4,9 +4,9 @@ import React, { PureComponent } from 'react';
 import { LabelElement } from './elements';
 import { FieldWrapper } from './wrappers';
 import Errors from './Errors';
-import type { FieldProps } from './types';
+import type { FieldProps, Component } from './types';
 
-export default function createFormField(WrappedComponent) {
+export default function createFormField(WrappedComponent: Component<*, FieldProps, *>) {
   return class FormField extends PureComponent {
     constructor(props: FieldProps) {
       super(props);
