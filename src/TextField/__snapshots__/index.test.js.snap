@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<TextField { name } /> should render only wrapped input field with defaults 1`] = `
+exports[`createFormField(TextField) <TextField { name } /> should render only wrapped input field with defaults 1`] = `
 <div
   className="form-item"
 >
@@ -13,7 +13,7 @@ exports[`<TextField { name } /> should render only wrapped input field with defa
 </div>
 `;
 
-exports[`<TextField { name, label } /> should render input and label 1`] = `
+exports[`createFormField(TextField) <TextField { name, label } /> should render input and label 1`] = `
 <div
   className="form-item"
 >
@@ -31,7 +31,7 @@ exports[`<TextField { name, label } /> should render input and label 1`] = `
 </div>
 `;
 
-exports[`<TextField { name, label, errors: [FIRST_ERROR, SECOND_ERROR] } /> should render input and label and two errors 1`] = `
+exports[`createFormField(TextField) <TextField { name, label, errors: [FIRST_ERROR, SECOND_ERROR] } /> should render input and label and two errors 1`] = `
 <div
   className="form-item"
 >
@@ -63,7 +63,7 @@ exports[`<TextField { name, label, errors: [FIRST_ERROR, SECOND_ERROR] } /> shou
 </div>
 `;
 
-exports[`<TextField { name, label, errors: [SINGLE_ERROR] } /> should render input and label and single error 1`] = `
+exports[`createFormField(TextField) <TextField { name, label, errors: [SINGLE_ERROR] } /> should render input and label and single error 1`] = `
 <div
   className="form-item"
 >
@@ -86,7 +86,7 @@ exports[`<TextField { name, label, errors: [SINGLE_ERROR] } /> should render inp
 </div>
 `;
 
-exports[`<TextField { name, placeholder } /> should render input with placeholder 1`] = `
+exports[`createFormField(TextField) <TextField { name, placeholder } /> should render input with placeholder 1`] = `
 <div
   className="form-item"
 >
@@ -100,7 +100,7 @@ exports[`<TextField { name, placeholder } /> should render input with placeholde
 </div>
 `;
 
-exports[`<TextField { name, placeholder, errors: [FIRST_ERROR, SECOND_ERROR] } /> should render input with placeholder and two errors 1`] = `
+exports[`createFormField(TextField) <TextField { name, placeholder, errors: [FIRST_ERROR, SECOND_ERROR] } /> should render input with placeholder and two errors 1`] = `
 <div
   className="form-item"
 >
@@ -128,7 +128,7 @@ exports[`<TextField { name, placeholder, errors: [FIRST_ERROR, SECOND_ERROR] } /
 </div>
 `;
 
-exports[`<TextField { name, placeholder, errors: [SINGLE_ERROR] } /> should render input with placeholder and single error 1`] = `
+exports[`createFormField(TextField) <TextField { name, placeholder, errors: [SINGLE_ERROR] } /> should render input with placeholder and single error 1`] = `
 <div
   className="form-item"
 >
@@ -147,7 +147,7 @@ exports[`<TextField { name, placeholder, errors: [SINGLE_ERROR] } /> should rend
 </div>
 `;
 
-exports[`<TextField { name, placeholder, label } /> should render input with placeholder and label 1`] = `
+exports[`createFormField(TextField) <TextField { name, placeholder, label } /> should render input with placeholder and label 1`] = `
 <div
   className="form-item"
 >
@@ -166,7 +166,7 @@ exports[`<TextField { name, placeholder, label } /> should render input with pla
 </div>
 `;
 
-exports[`<TextField { name, placeholder, label, errors: [FIRST_ERROR, SECOND_ERROR] } /> should render input with placeholder and label and two errors 1`] = `
+exports[`createFormField(TextField) <TextField { name, placeholder, label, errors: [FIRST_ERROR, SECOND_ERROR] } /> should render input with placeholder and label and two errors 1`] = `
 <div
   className="form-item"
 >
@@ -199,7 +199,7 @@ exports[`<TextField { name, placeholder, label, errors: [FIRST_ERROR, SECOND_ERR
 </div>
 `;
 
-exports[`<TextField { name, placeholder, label, errors: [SINGLE_ERROR] } /> should render input with placeholder and label and single error 1`] = `
+exports[`createFormField(TextField) <TextField { name, placeholder, label, errors: [SINGLE_ERROR] } /> should render input with placeholder and label and single error 1`] = `
 <div
   className="form-item"
 >
