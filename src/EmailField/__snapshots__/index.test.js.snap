@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<EmailField { name } /> should render only wrapped input field with defaults 1`] = `
+exports[`createFormField(EmailField) <EmailField { name } /> should render only wrapped input field with defaults 1`] = `
 <div
   className="form-item"
 >
@@ -13,7 +13,7 @@ exports[`<EmailField { name } /> should render only wrapped input field with def
 </div>
 `;
 
-exports[`<EmailField { name, label } /> should render input and labbel 1`] = `
+exports[`createFormField(EmailField) <EmailField { name, label } /> should render input and labbel 1`] = `
 <div
   className="form-item"
 >
@@ -31,7 +31,7 @@ exports[`<EmailField { name, label } /> should render input and labbel 1`] = `
 </div>
 `;
 
-exports[`<EmailField { name, label, errors: [FIRST_ERROR, SECOND_ERROR] } /> should render input and label and two errors 1`] = `
+exports[`createFormField(EmailField) <EmailField { name, label, errors: [FIRST_ERROR, SECOND_ERROR] } /> should render input and label and two errors 1`] = `
 <div
   className="form-item"
 >
@@ -63,7 +63,7 @@ exports[`<EmailField { name, label, errors: [FIRST_ERROR, SECOND_ERROR] } /> sho
 </div>
 `;
 
-exports[`<EmailField { name, label, errors: [SINGLE_ERROR] } /> should render input and label and single error 1`] = `
+exports[`createFormField(EmailField) <EmailField { name, label, errors: [SINGLE_ERROR] } /> should render input and label and single error 1`] = `
 <div
   className="form-item"
 >
@@ -86,7 +86,7 @@ exports[`<EmailField { name, label, errors: [SINGLE_ERROR] } /> should render in
 </div>
 `;
 
-exports[`<EmailField { name, placeholder } /> should render input with placeholder 1`] = `
+exports[`createFormField(EmailField) <EmailField { name, placeholder } /> should render input with placeholder 1`] = `
 <div
   className="form-item"
 >
@@ -100,7 +100,7 @@ exports[`<EmailField { name, placeholder } /> should render input with placehold
 </div>
 `;
 
-exports[`<EmailField { name, placeholder, errors: [FIRST_ERROR, SECOND_ERROR] } /> should render input with placeholder and two errors 1`] = `
+exports[`createFormField(EmailField) <EmailField { name, placeholder, errors: [FIRST_ERROR, SECOND_ERROR] } /> should render input with placeholder and two errors 1`] = `
 <div
   className="form-item"
 >
@@ -128,7 +128,7 @@ exports[`<EmailField { name, placeholder, errors: [FIRST_ERROR, SECOND_ERROR] } 
 </div>
 `;
 
-exports[`<EmailField { name, placeholder, errors: [SINGLE_ERROR] } /> should render input with placeholder and single error 1`] = `
+exports[`createFormField(EmailField) <EmailField { name, placeholder, errors: [SINGLE_ERROR] } /> should render input with placeholder and single error 1`] = `
 <div
   className="form-item"
 >
@@ -147,7 +147,7 @@ exports[`<EmailField { name, placeholder, errors: [SINGLE_ERROR] } /> should ren
 </div>
 `;
 
-exports[`<EmailField { name, placeholder, label } /> should render input with placeholder and label 1`] = `
+exports[`createFormField(EmailField) <EmailField { name, placeholder, label } /> should render input with placeholder and label 1`] = `
 <div
   className="form-item"
 >
@@ -166,7 +166,7 @@ exports[`<EmailField { name, placeholder, label } /> should render input with pl
 </div>
 `;
 
-exports[`<EmailField { name, placeholder, label, errors: [FIRST_ERROR, SECOND_ERROR] } /> should render input with placeholder and label and two errors 1`] = `
+exports[`createFormField(EmailField) <EmailField { name, placeholder, label, errors: [FIRST_ERROR, SECOND_ERROR] } /> should render input with placeholder and label and two errors 1`] = `
 <div
   className="form-item"
 >
@@ -199,7 +199,7 @@ exports[`<EmailField { name, placeholder, label, errors: [FIRST_ERROR, SECOND_ER
 </div>
 `;
 
-exports[`<EmailField { name, placeholder, label, errors: [SINGLE_ERROR] } /> should render input with placeholder and label and single error 1`] = `
+exports[`createFormField(EmailField) <EmailField { name, placeholder, label, errors: [SINGLE_ERROR] } /> should render input with placeholder and label and single error 1`] = `
 <div
   className="form-item"
 >

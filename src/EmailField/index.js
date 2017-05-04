@@ -1,12 +1,19 @@
 /* @flow */
 
 import React from 'react';
-import createFormField from '../createFormField';
-import { EmailFieldElement } from '../elements';
-import type { FieldProps } from '../types';
+import { composeInputProps } from '../helpers';
+import type { InputProps, TextFieldElementProps } from '../types';
 
-const EmailField = (props: FieldProps) => (
-  <EmailFieldElement {...props} />
-);
+const EmailField = (props: TextFieldElementProps) => {
+  const inputProps: InputProps = composeInputProps('email', props);
 
-export default createFormField(EmailField);
+  return (
+    <input type="email" {...inputProps} />
+  );
+};
+// TODO figure out a better way of using defaults in stateless component
+EmailField.defaultProps = {
+  className: 'textfield',
+};
+
+export default EmailField;
