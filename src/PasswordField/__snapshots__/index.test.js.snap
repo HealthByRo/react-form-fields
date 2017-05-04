@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<PasswordField { name } /> should render only wrapped input field with defaults 1`] = `
+exports[`createFormField(PasswordField) <PasswordField { name } /> should render only wrapped input field with defaults 1`] = `
 <div
   className="form-item"
 >
@@ -13,7 +13,7 @@ exports[`<PasswordField { name } /> should render only wrapped input field with 
 </div>
 `;
 
-exports[`<PasswordField { name, label } /> should render input and label 1`] = `
+exports[`createFormField(PasswordField) <PasswordField { name, label } /> should render input and label 1`] = `
 <div
   className="form-item"
 >
@@ -31,7 +31,7 @@ exports[`<PasswordField { name, label } /> should render input and label 1`] = `
 </div>
 `;
 
-exports[`<PasswordField { name, label, errors: [FIRST_ERROR, SECOND_ERROR] } /> should render input and label and two error 1`] = `
+exports[`createFormField(PasswordField) <PasswordField { name, label, errors: [FIRST_ERROR, SECOND_ERROR] } /> should render input and label and two error 1`] = `
 <div
   className="form-item"
 >
@@ -63,7 +63,7 @@ exports[`<PasswordField { name, label, errors: [FIRST_ERROR, SECOND_ERROR] } /> 
 </div>
 `;
 
-exports[`<PasswordField { name, label, errors: [SINGLE_ERROR] } /> should render input and label and single error 1`] = `
+exports[`createFormField(PasswordField) <PasswordField { name, label, errors: [SINGLE_ERROR] } /> should render input and label and single error 1`] = `
 <div
   className="form-item"
 >
@@ -86,7 +86,7 @@ exports[`<PasswordField { name, label, errors: [SINGLE_ERROR] } /> should render
 </div>
 `;
 
-exports[`<PasswordField { name, label, placeholder } /> should render input with placeholder and label 1`] = `
+exports[`createFormField(PasswordField) <PasswordField { name, label, placeholder } /> should render input with placeholder and label 1`] = `
 <div
   className="form-item"
 >
@@ -105,7 +105,7 @@ exports[`<PasswordField { name, label, placeholder } /> should render input with
 </div>
 `;
 
-exports[`<PasswordField { name, label, placeholder, errors: [FIRST_ERROR, SECOND_ERROR]  } /> should render input with placeholder, label and two errors 1`] = `
+exports[`createFormField(PasswordField) <PasswordField { name, label, placeholder, errors: [FIRST_ERROR, SECOND_ERROR]  } /> should render input with placeholder, label and two errors 1`] = `
 <div
   className="form-item"
 >
@@ -138,7 +138,7 @@ exports[`<PasswordField { name, label, placeholder, errors: [FIRST_ERROR, SECOND
 </div>
 `;
 
-exports[`<PasswordField { name, label, placeholder, errors: [SINGLE_ERROR] } /> should render input with placeholder, label and single error 1`] = `
+exports[`createFormField(PasswordField) <PasswordField { name, label, placeholder, errors: [SINGLE_ERROR] } /> should render input with placeholder, label and single error 1`] = `
 <div
   className="form-item"
 >
@@ -162,7 +162,7 @@ exports[`<PasswordField { name, label, placeholder, errors: [SINGLE_ERROR] } /> 
 </div>
 `;
 
-exports[`<PasswordField { name, placeholder } /> should render input with placeholder 1`] = `
+exports[`createFormField(PasswordField) <PasswordField { name, placeholder } /> should render input with placeholder 1`] = `
 <div
   className="form-item"
 >
@@ -176,7 +176,7 @@ exports[`<PasswordField { name, placeholder } /> should render input with placeh
 </div>
 `;
 
-exports[`<PasswordField { name, placeholder, errors: [FIRST_ERROR, SECOND_ERROR] } /> should render input with placeholder and two error 1`] = `
+exports[`createFormField(PasswordField) <PasswordField { name, placeholder, errors: [FIRST_ERROR, SECOND_ERROR] } /> should render input with placeholder and two error 1`] = `
 <div
   className="form-item"
 >
@@ -204,7 +204,7 @@ exports[`<PasswordField { name, placeholder, errors: [FIRST_ERROR, SECOND_ERROR]
 </div>
 `;
 
-exports[`<PasswordField { name, placeholder, errors: [SINGLE_ERROR] } /> should render input with placeholder and single error 1`] = `
+exports[`createFormField(PasswordField) <PasswordField { name, placeholder, errors: [SINGLE_ERROR] } /> should render input with placeholder and single error 1`] = `
 <div
   className="form-item"
 >

@@ -1,12 +1,19 @@
 /* @flow */
 
 import React from 'react';
-import createFormField from '../createFormField';
-import { PasswordFieldElement } from '../elements';
-import type { FieldProps } from '../types';
+import { composeInputProps } from '../helpers';
+import type { InputProps, TextFieldElementProps } from '../types';
 
-const PasswordField = (props: FieldProps) => (
-  <PasswordFieldElement{...props} />
-);
+const PasswordField = (props: TextFieldElementProps) => {
+  const inputProps: InputProps = composeInputProps('password', props);
 
-export default createFormField(PasswordField);
+  return (
+    <input type="password" {...inputProps} />
+  );
+};
+// TODO figure out a better way of using defaults in stateless component
+PasswordField.defaultProps = {
+  className: 'textfield',
+};
+
+export default PasswordField;
