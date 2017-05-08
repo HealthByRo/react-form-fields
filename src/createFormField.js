@@ -1,6 +1,7 @@
 /* @flow */
 
 import React, { PureComponent } from 'react';
+import snakeCase from 'lodash/snakeCase';
 import { LabelElement } from './elements';
 import { FieldWrapper } from './wrappers';
 import Errors from './Errors';
@@ -29,7 +30,7 @@ export default function createFormField(WrappedComponent: Component<*, FieldProp
 
     // TODO add some unique id at the end
     generateInputId(props: FieldProps): string {
-      return `TF-${props.name}`;
+      return `id_${snakeCase(props.name)}`;
     }
 
     props: FieldProps;

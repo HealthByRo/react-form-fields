@@ -5,7 +5,7 @@ exports[`createFormField(TestField) <TestField { name } /> should render only wr
   className="form-item"
 >
   <input
-    inputId="TF-INPUT_NAME"
+    inputId="id_input_name"
     name="INPUT_NAME"
     type="text"
   />
@@ -17,12 +17,12 @@ exports[`createFormField(TestField) <TestField { name, label } /> should render 
   className="form-item"
 >
   <label
-    htmlFor="TF-INPUT_NAME"
+    htmlFor="id_input_name"
   >
     INPUT_LABEL
   </label>
   <input
-    inputId="TF-INPUT_NAME"
+    inputId="id_input_name"
     label="INPUT_LABEL"
     name="INPUT_NAME"
     type="text"
@@ -35,7 +35,7 @@ exports[`createFormField(TestField) <TestField { name, label, errors: [FIRST_ERR
   className="form-item"
 >
   <label
-    htmlFor="TF-INPUT_NAME"
+    htmlFor="id_input_name"
   >
     INPUT_LABEL
   </label>
@@ -46,7 +46,7 @@ exports[`createFormField(TestField) <TestField { name, label, errors: [FIRST_ERR
         "SECOND_ERROR",
       ]
     }
-    inputId="TF-INPUT_NAME"
+    inputId="id_input_name"
     label="INPUT_LABEL"
     name="INPUT_NAME"
     type="text"
@@ -73,7 +73,7 @@ exports[`createFormField(TestField) <TestField { name, label, errors: [SINGLE_ER
   className="form-item"
 >
   <label
-    htmlFor="TF-INPUT_NAME"
+    htmlFor="id_input_name"
   >
     INPUT_LABEL
   </label>
@@ -83,7 +83,7 @@ exports[`createFormField(TestField) <TestField { name, label, errors: [SINGLE_ER
         "SINGLE_ERROR",
       ]
     }
-    inputId="TF-INPUT_NAME"
+    inputId="id_input_name"
     label="INPUT_LABEL"
     name="INPUT_NAME"
     type="text"
@@ -101,12 +101,12 @@ exports[`createFormField(TestField) <TestField { name, label, placeholder } /> s
   className="form-item"
 >
   <label
-    htmlFor="TF-INPUT_NAME"
+    htmlFor="id_input_name"
   >
     INPUT_LABEL
   </label>
   <input
-    inputId="TF-INPUT_NAME"
+    inputId="id_input_name"
     label="INPUT_LABEL"
     name="INPUT_NAME"
     placeholder="INPUT_PLACEHOLDER"
@@ -120,7 +120,7 @@ exports[`createFormField(TestField) <TestField { name, label, placeholder, error
   className="form-item"
 >
   <label
-    htmlFor="TF-INPUT_NAME"
+    htmlFor="id_input_name"
   >
     INPUT_LABEL
   </label>
@@ -131,7 +131,7 @@ exports[`createFormField(TestField) <TestField { name, label, placeholder, error
         "SECOND_ERROR",
       ]
     }
-    inputId="TF-INPUT_NAME"
+    inputId="id_input_name"
     label="INPUT_LABEL"
     name="INPUT_NAME"
     placeholder="INPUT_PLACEHOLDER"
@@ -159,7 +159,7 @@ exports[`createFormField(TestField) <TestField { name, label, placeholder, error
   className="form-item"
 >
   <label
-    htmlFor="TF-INPUT_NAME"
+    htmlFor="id_input_name"
   >
     INPUT_LABEL
   </label>
@@ -169,7 +169,7 @@ exports[`createFormField(TestField) <TestField { name, label, placeholder, error
         "SINGLE_ERROR",
       ]
     }
-    inputId="TF-INPUT_NAME"
+    inputId="id_input_name"
     label="INPUT_LABEL"
     name="INPUT_NAME"
     placeholder="INPUT_PLACEHOLDER"
@@ -188,7 +188,7 @@ exports[`createFormField(TestField) <TestField { name, placeholder } /> should r
   className="form-item"
 >
   <input
-    inputId="TF-INPUT_NAME"
+    inputId="id_input_name"
     name="INPUT_NAME"
     placeholder="INPUT_PLACEHOLDER"
     type="text"
@@ -207,7 +207,7 @@ exports[`createFormField(TestField) <TestField { name, placeholder, errors: [FIR
         "SECOND_ERROR",
       ]
     }
-    inputId="TF-INPUT_NAME"
+    inputId="id_input_name"
     name="INPUT_NAME"
     placeholder="INPUT_PLACEHOLDER"
     type="text"
@@ -239,7 +239,7 @@ exports[`createFormField(TestField) <TestField { name, placeholder, errors: [SIN
         "SINGLE_ERROR",
       ]
     }
-    inputId="TF-INPUT_NAME"
+    inputId="id_input_name"
     name="INPUT_NAME"
     placeholder="INPUT_PLACEHOLDER"
     type="text"
