@@ -11,7 +11,6 @@ const TextField = (props: TextFieldElementProps) => {
     <input type="text" {...inputProps} />
   );
 };
-// TODO figure out a better way of using defaults in stateless component
 TextField.defaultProps = {
   className: 'textfield',
 };

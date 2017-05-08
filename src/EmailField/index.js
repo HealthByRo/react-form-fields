@@ -11,7 +11,6 @@ const EmailField = (props: TextFieldElementProps) => {
     <input type="email" {...inputProps} />
   );
 };
-// TODO figure out a better way of using defaults in stateless component
 EmailField.defaultProps = {
   className: 'textfield',
 };
