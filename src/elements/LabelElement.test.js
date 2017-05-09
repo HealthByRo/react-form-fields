@@ -9,8 +9,8 @@ import type { LabelElementProps } from './types';
 describe('<LabelElement />', () => {
   let wrapper;
   const defaultProps = {
-    inputId: 'INPUT_ID',
-    label: 'FIELD_LABEL',
+    htmlFor: 'INPUT_ID',
+    text: 'FIELD_LABEL',
   };
   const shallowWithProps = (props: LabelElementProps = defaultProps) => {
     wrapper = shallow(

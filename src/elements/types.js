@@ -9,6 +9,7 @@ export type ErrorElementProps = {
 
 export type LabelElementProps = {
   children?: Children,
-  label: string,
-  inputId: string,
+  className?: string,
+  htmlFor: string,
+  text: string,
 };
