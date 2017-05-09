@@ -5,7 +5,7 @@ exports[`createFormField(TestField) <TestField { name } /> should render only wr
   className="form-item"
 >
   <input
-    inputId="id_input_name"
+    id="id_input_name"
     name="INPUT_NAME"
     type="text"
   />
@@ -22,15 +22,14 @@ exports[`createFormField(TestField) <TestField { name, label } /> should render 
     INPUT_LABEL
   </label>
   <input
-    inputId="id_input_name"
-    label="INPUT_LABEL"
+    id="id_input_name"
     name="INPUT_NAME"
     type="text"
   />
 </div>
 `;
 
-exports[`createFormField(TestField) <TestField { name, label, errors: [FIRST_ERROR, SECOND_ERROR] } /> should render input and label and two error 1`] = `
+exports[`createFormField(TestField) <TestField { name, label, errors: [FIRST_ERROR, SECOND_ERROR] } /> should render input and label and two errors 1`] = `
 <div
   className="form-item"
 >
@@ -40,14 +39,7 @@ exports[`createFormField(TestField) <TestField { name, label, errors: [FIRST_ERR
     INPUT_LABEL
   </label>
   <input
-    errors={
-      Array [
-        "FIRST_ERROR",
-        "SECOND_ERROR",
-      ]
-    }
-    inputId="id_input_name"
-    label="INPUT_LABEL"
+    id="id_input_name"
     name="INPUT_NAME"
     type="text"
   />
@@ -78,13 +70,7 @@ exports[`createFormField(TestField) <TestField { name, label, errors: [SINGLE_ER
     INPUT_LABEL
   </label>
   <input
-    errors={
-      Array [
-        "SINGLE_ERROR",
-      ]
-    }
-    inputId="id_input_name"
-    label="INPUT_LABEL"
+    id="id_input_name"
     name="INPUT_NAME"
     type="text"
   />
@@ -106,8 +92,7 @@ exports[`createFormField(TestField) <TestField { name, label, placeholder } /> s
     INPUT_LABEL
   </label>
   <input
-    inputId="id_input_name"
-    label="INPUT_LABEL"
+    id="id_input_name"
     name="INPUT_NAME"
     placeholder="INPUT_PLACEHOLDER"
     type="text"
@@ -125,14 +110,7 @@ exports[`createFormField(TestField) <TestField { name, label, placeholder, error
     INPUT_LABEL
   </label>
   <input
-    errors={
-      Array [
-        "FIRST_ERROR",
-        "SECOND_ERROR",
-      ]
-    }
-    inputId="id_input_name"
-    label="INPUT_LABEL"
+    id="id_input_name"
     name="INPUT_NAME"
     placeholder="INPUT_PLACEHOLDER"
     type="text"
@@ -164,13 +142,7 @@ exports[`createFormField(TestField) <TestField { name, label, placeholder, error
     INPUT_LABEL
   </label>
   <input
-    errors={
-      Array [
-        "SINGLE_ERROR",
-      ]
-    }
-    inputId="id_input_name"
-    label="INPUT_LABEL"
+    id="id_input_name"
     name="INPUT_NAME"
     placeholder="INPUT_PLACEHOLDER"
     type="text"
@@ -188,7 +160,7 @@ exports[`createFormField(TestField) <TestField { name, placeholder } /> should r
   className="form-item"
 >
   <input
-    inputId="id_input_name"
+    id="id_input_name"
     name="INPUT_NAME"
     placeholder="INPUT_PLACEHOLDER"
     type="text"
@@ -196,18 +168,12 @@ exports[`createFormField(TestField) <TestField { name, placeholder } /> should r
 </div>
 `;
 
-exports[`createFormField(TestField) <TestField { name, placeholder, errors: [FIRST_ERROR, SECOND_ERROR] } /> should render input with placeholder and two error 1`] = `
+exports[`createFormField(TestField) <TestField { name, placeholder, errors: [FIRST_ERROR, SECOND_ERROR] } /> should render input with placeholder and two errors 1`] = `
 <div
   className="form-item"
 >
   <input
-    errors={
-      Array [
-        "FIRST_ERROR",
-        "SECOND_ERROR",
-      ]
-    }
-    inputId="id_input_name"
+    id="id_input_name"
     name="INPUT_NAME"
     placeholder="INPUT_PLACEHOLDER"
     type="text"
@@ -234,12 +200,7 @@ exports[`createFormField(TestField) <TestField { name, placeholder, errors: [SIN
   className="form-item"
 >
   <input
-    errors={
-      Array [
-        "SINGLE_ERROR",
-      ]
-    }
-    inputId="id_input_name"
+    id="id_input_name"
     name="INPUT_NAME"
     placeholder="INPUT_PLACEHOLDER"
     type="text"

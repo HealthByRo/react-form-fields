@@ -5,7 +5,7 @@ import snakeCase from 'lodash/snakeCase';
 import { LabelElement } from './elements';
 import { FieldWrapper } from './wrappers';
 import Errors from './Errors';
-import type { FieldProps, Component } from './types';
+import type { FieldProps, LabelProps, InputProps, ErrorsProps, Component } from './types';
 
 export default function createFormField(WrappedComponent: Component<*, FieldProps, *>) {
   return class FormField extends PureComponent {
@@ -18,34 +18,61 @@ export default function createFormField(WrappedComponent: Component<*, FieldProp
       }
     }
 
-    composeProps(): FieldProps {
-      const props = { ...this.props };
-
-      if (!props.inputId) {
-        props.inputId = this.generateInputId(props);
-      }
-
-      return props;
-    }
-
-    generateInputId(props: FieldProps): string {
-      return `id_${snakeCase(props.name)}`;
-    }
-
     props: FieldProps;
 
     render() {
-      const props = this.composeProps();
+      const {
+        labelProps,
+        inputProps,
+        errorsProps,
+      } = composeProps(this.props);
+      const showLabel = this.props.label || this.props.labelProps;
 
       return (
         <FieldWrapper>
-          {props.label &&
-            <LabelElement {...props} />
+          {showLabel &&
+            <LabelElement {...labelProps} />
           }
-          <WrappedComponent {...props} />
-          <Errors {...props} />
+          <WrappedComponent {...inputProps} />
+          <Errors {...errorsProps} />
         </FieldWrapper>
       );
     }
   };
+}
+
+function composeProps(props: FieldProps): Object {
+  const {
+    name,
+    placeholder,
+    label,
+  } = props;
+  const inputId = props.inputId || generateInputId(props);
+  const labelProps: LabelProps = {
+    htmlFor: inputId,
+    text: label,
+  };
+  const inputProps: InputProps = {
+    name,
+    id: inputId,
+  };
+  const errorsProps: ErrorsProps = {
+    errors: props.errors,
+  };
+
+  // don't set placeholder when undefined
+  // to avoid placeholder={undefined} in rendered html
+  if (placeholder) {
+    inputProps.placeholder = placeholder;
+  }
+
+  return {
+    labelProps,
+    inputProps,
+    errorsProps,
+  };
+}
+
+function generateInputId(props: FieldProps): string {
+  return `id_${snakeCase(props.name)}`;
 }
