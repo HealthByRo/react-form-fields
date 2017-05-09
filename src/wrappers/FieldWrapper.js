@@ -8,7 +8,6 @@ const FieldWrapper = (props: WrapperProps) => (
     {props.children}
   </div>
 );
-// TODO figure out a better way of using defaults in stateless component
 FieldWrapper.defaultProps = {
   className: 'form-item',
 };

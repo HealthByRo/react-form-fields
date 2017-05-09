@@ -8,7 +8,6 @@ const ErrorElement = (props: ErrorElementProps) => (
     {props.children}
   </div>
 );
-// TODO figure out a better way of using defaults in stateless component
 ErrorElement.defaultProps = {
   className: 'msg msg--error',
 };

@@ -1,18 +1,18 @@
 /* @flow */
 
 import React from 'react';
-import BaseField from '../BaseField';
-import { EmailFieldElement } from '../elements';
-import type { FieldProps } from '../types';
+import { composeInputProps } from '../helpers';
+import type { InputProps, TextFieldElementProps } from '../types';
 
-export default class EmailField extends BaseField {
-  renderFieldElement(props: FieldProps) {
-    return (
-      <EmailFieldElement {...props} />
-    );
-  }
+const EmailField = (props: TextFieldElementProps) => {
+  const inputProps: InputProps = composeInputProps('email', props);
 
-  render() {
-    return super.renderWithField(this.renderFieldElement);
-  }
-}
+  return (
+    <input type="email" {...inputProps} />
+  );
+};
+EmailField.defaultProps = {
+  className: 'textfield',
+};
+
+export default EmailField;

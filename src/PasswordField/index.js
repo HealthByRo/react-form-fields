@@ -1,18 +1,18 @@
 /* @flow */
 
 import React from 'react';
-import BaseField from '../BaseField';
-import { PasswordFieldElement } from '../elements';
-import type { FieldProps } from '../types';
+import { composeInputProps } from '../helpers';
+import type { InputProps, TextFieldElementProps } from '../types';
 
-export default class PasswordField extends BaseField {
-  renderFieldElement(props: FieldProps) {
-    return (
-      <PasswordFieldElement {...props} />
-    );
-  }
+const PasswordField = (props: TextFieldElementProps) => {
+  const inputProps: InputProps = composeInputProps('password', props);
 
-  render() {
-    return super.renderWithField(this.renderFieldElement);
-  }
-}
+  return (
+    <input type="password" {...inputProps} />
+  );
+};
+PasswordField.defaultProps = {
+  className: 'textfield',
+};
+
+export default PasswordField;

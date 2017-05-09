@@ -8,7 +8,6 @@ const ErrorsListWrapper = (props: WrapperProps) => (
     {props.children}
   </div>
 );
-// TODO figure out a better way of using defaults in stateless component
 ErrorsListWrapper.defaultProps = {
   className: 'errors-list',
 };

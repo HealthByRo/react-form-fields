@@ -2,6 +2,13 @@
 
 import type { Children } from 'react';
 
+/* eslint-disable no-undef */
+export type FunctionComponent<P> = (props: P) => ?React$Element<any>;
+export type ClassComponent<D, P, S> = Class<React$Component<D, P, S>>;
+/* eslint-enable no-undef */
+
+export type Component<D, P, S> = ClassComponent<D, P, S> | FunctionComponent<P>
+
 export type ErrorsType = Array<string>;
 
 export type ErrorsProps = {
@@ -13,6 +20,22 @@ export type FieldProps = {
   errors?: ErrorsType,
   inputId?: string,
   label?: string,
+  name: string,
+  placeholder?: string,
+  value?: string,
+};
+
+export type TextFieldElementProps = {
+  className?: string,
+  inputId: string,
+  name: string,
+  placeholder?: string,
+  value?: string,
+};
+
+export type InputProps = {
+  className?: string,
+  id: string,
   name: string,
   placeholder?: string,
   value?: string,

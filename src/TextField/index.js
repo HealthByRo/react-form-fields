@@ -1,18 +1,18 @@
 /* @flow */
 
 import React from 'react';
-import BaseField from '../BaseField';
-import { TextFieldElement } from '../elements';
-import type { FieldProps } from '../types';
+import { composeInputProps } from '../helpers';
+import type { InputProps, TextFieldElementProps } from '../types';
 
-export default class TextField extends BaseField {
-  renderFieldElement(props: FieldProps) {
-    return (
-      <TextFieldElement {...props} />
-    );
-  }
+const TextField = (props: TextFieldElementProps) => {
+  const inputProps: InputProps = composeInputProps('text', props);
 
-  render() {
-    return super.renderWithField(this.renderFieldElement);
-  }
-}
+  return (
+    <input type="text" {...inputProps} />
+  );
+};
+TextField.defaultProps = {
+  className: 'textfield',
+};
+
+export default TextField;
