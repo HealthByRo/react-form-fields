@@ -1,16 +1,11 @@
 /* @flow */
 
 import React from 'react';
-import { composeInputProps } from '../helpers';
-import type { InputProps, TextFieldElementProps } from '../types';
+import type { InputProps } from '../types';
 
-const EmailField = (props: TextFieldElementProps) => {
-  const inputProps: InputProps = composeInputProps('email', props);
-
-  return (
-    <input type="email" {...inputProps} />
-  );
-};
+const EmailField = (props: InputProps) => (
+  <input type="email" {...props} />
+);
 EmailField.defaultProps = {
   className: 'textfield',
 };

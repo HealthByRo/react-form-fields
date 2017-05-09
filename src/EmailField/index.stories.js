@@ -1,6 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import EmailField from './';
+import createFormField from '../createFormField';
+
+const EmailFormField = createFormField(EmailField);
 
 storiesOf('Fields: EmailField', module)
   .add('input', () => {
@@ -9,7 +12,7 @@ storiesOf('Fields: EmailField', module)
     };
 
     return (
-      <EmailField {...props} />
+      <EmailFormField {...props} />
     );
   })
   .add('input + placeholder', () => {
@@ -19,7 +22,7 @@ storiesOf('Fields: EmailField', module)
     };
 
     return (
-      <EmailField {...props} />
+      <EmailFormField {...props} />
     );
   })
   .add('input + placeholder + error', () => {
@@ -30,7 +33,7 @@ storiesOf('Fields: EmailField', module)
     };
 
     return (
-      <EmailField {...props} />
+      <EmailFormField {...props} />
     );
   })
   .add('input + placeholder + multiple errors', () => {
@@ -44,7 +47,7 @@ storiesOf('Fields: EmailField', module)
     };
 
     return (
-      <EmailField {...props} />
+      <EmailFormField {...props} />
     );
   })
   .add('input + label', () => {
@@ -54,7 +57,7 @@ storiesOf('Fields: EmailField', module)
     };
 
     return (
-      <EmailField {...props} />
+      <EmailFormField {...props} />
     );
   })
   .add('input + label + error', () => {
@@ -65,7 +68,7 @@ storiesOf('Fields: EmailField', module)
     };
 
     return (
-      <EmailField {...props} />
+      <EmailFormField {...props} />
     );
   })
   .add('input + label + multiple errors', () => {
@@ -79,7 +82,7 @@ storiesOf('Fields: EmailField', module)
     };
 
     return (
-      <EmailField {...props} />
+      <EmailFormField {...props} />
     );
   })
   .add('input + label + placeholder', () => {
@@ -90,7 +93,7 @@ storiesOf('Fields: EmailField', module)
     };
 
     return (
-      <EmailField {...props} />
+      <EmailFormField {...props} />
     );
   })
   .add('input + label + placeholder + error', () => {
@@ -102,7 +105,7 @@ storiesOf('Fields: EmailField', module)
     };
 
     return (
-      <EmailField {...props} />
+      <EmailFormField {...props} />
     );
   })
   .add('input + label + placeholder + mutliple errors', () => {
@@ -117,6 +120,6 @@ storiesOf('Fields: EmailField', module)
     };
 
     return (
-      <EmailField {...props} />
+      <EmailFormField {...props} />
     );
   });
