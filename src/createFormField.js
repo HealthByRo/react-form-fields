@@ -28,7 +28,6 @@ export default function createFormField(WrappedComponent: Component<*, FieldProp
       return props;
     }
 
-    // TODO add some unique id at the end
     generateInputId(props: FieldProps): string {
       return `id_${snakeCase(props.name)}`;
     }
