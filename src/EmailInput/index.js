@@ -3,11 +3,11 @@
 import React from 'react';
 import type { InputProps } from '../types';
 
-const EmailField = (props: InputProps) => (
+const EmailInput = (props: InputProps) => (
   <input type="email" {...props} />
 );
-EmailField.defaultProps = {
+EmailInput.defaultProps = {
   className: 'textfield',
 };
 
-export default EmailField;
+export default EmailInput;

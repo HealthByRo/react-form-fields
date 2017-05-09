@@ -2,10 +2,10 @@
 
 import React from 'react';
 import { shallow } from 'enzyme';
-import EmailField from './';
+import EmailInput from './';
 import type { InputProps } from '../types';
 
-describe('<EmailField />', () => {
+describe('<EmailInput />', () => {
   let wrapper;
   const defaultProps = {
     name: 'INPUT_NAME',
@@ -13,7 +13,7 @@ describe('<EmailField />', () => {
   };
   const shallowWithProps = (props: InputProps) => {
     wrapper = shallow(
-      <EmailField {...props} />
+      <EmailInput {...props} />
     );
   };
 
