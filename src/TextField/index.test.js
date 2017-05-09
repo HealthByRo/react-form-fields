@@ -3,22 +3,22 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import TextField from './';
-import type { FieldProps } from '../types';
+import type { InputProps } from '../types';
 
 describe('<TextField />', () => {
   let wrapper;
   const defaultProps = {
     name: 'INPUT_NAME',
-    inputId: 'INPUT_ID',
+    id: 'INPUT_ID',
   };
-  const shallowWithProps = (props: FieldProps) => {
+  const shallowWithProps = (props: InputProps) => {
     wrapper = shallow(
       <TextField {...props} />
     );
   };
 
   describe('html element', () => {
-    describe('just name and inputId', () => {
+    describe('just name and id', () => {
       beforeEach(() => {
         shallowWithProps(defaultProps);
       });
@@ -67,15 +67,6 @@ describe('<TextField />', () => {
       });
 
       expect(wrapper.props().placeholder).toEqual('PLACEHOLDER');
-    });
-
-    it('should use id from props.inputId', () => {
-      shallowWithProps({
-        ...defaultProps,
-        inputId: 'INPUT_ID',
-      });
-
-      expect(wrapper.props().id).toEqual('INPUT_ID');
     });
   });
 });
