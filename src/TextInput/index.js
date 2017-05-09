@@ -3,11 +3,11 @@
 import React from 'react';
 import type { InputProps } from '../types';
 
-const TextField = (props: InputProps) => (
+const TextInput = (props: InputProps) => (
   <input type="text" {...props} />
 );
-TextField.defaultProps = {
+TextInput.defaultProps = {
   className: 'textfield',
 };
 
-export default TextField;
+export default TextInput;

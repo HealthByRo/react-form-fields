@@ -2,10 +2,10 @@
 
 import React from 'react';
 import { shallow } from 'enzyme';
-import TextField from './';
+import TextInput from './';
 import type { InputProps } from '../types';
 
-describe('<TextField />', () => {
+describe('<TextInput />', () => {
   let wrapper;
   const defaultProps = {
     name: 'INPUT_NAME',
@@ -13,7 +13,7 @@ describe('<TextField />', () => {
   };
   const shallowWithProps = (props: InputProps) => {
     wrapper = shallow(
-      <TextField {...props} />
+      <TextInput {...props} />
     );
   };
 

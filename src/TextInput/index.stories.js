@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import TextField from './';
+import TextInput from './';
 import createFormField from '../createFormField';
 
-const TextFormField = createFormField(TextField);
+const TextField = createFormField(TextInput);
 
 storiesOf('Fields: TextField', module)
   .add('input', () => {
@@ -12,7 +12,7 @@ storiesOf('Fields: TextField', module)
     };
 
     return (
-      <TextFormField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + placeholder', () => {
@@ -22,7 +22,7 @@ storiesOf('Fields: TextField', module)
     };
 
     return (
-      <TextFormField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + placeholder + error', () => {
@@ -33,7 +33,7 @@ storiesOf('Fields: TextField', module)
     };
 
     return (
-      <TextFormField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + placeholder + multiple errors', () => {
@@ -47,7 +47,7 @@ storiesOf('Fields: TextField', module)
     };
 
     return (
-      <TextFormField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + label', () => {
@@ -57,7 +57,7 @@ storiesOf('Fields: TextField', module)
     };
 
     return (
-      <TextFormField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + label + error', () => {
@@ -68,7 +68,7 @@ storiesOf('Fields: TextField', module)
     };
 
     return (
-      <TextFormField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + label + multiple errors', () => {
@@ -82,7 +82,7 @@ storiesOf('Fields: TextField', module)
     };
 
     return (
-      <TextFormField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + label + placeholder', () => {
@@ -93,7 +93,7 @@ storiesOf('Fields: TextField', module)
     };
 
     return (
-      <TextFormField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + label + placeholder + error', () => {
@@ -105,7 +105,7 @@ storiesOf('Fields: TextField', module)
     };
 
     return (
-      <TextFormField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + label + placeholder + mutliple errors', () => {
@@ -120,6 +120,6 @@ storiesOf('Fields: TextField', module)
     };
 
     return (
-      <TextFormField {...props} />
+      <TextField {...props} />
     );
   });
