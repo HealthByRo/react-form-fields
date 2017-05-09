@@ -42,11 +42,3 @@ export type FieldProps = {
   inputProps?: Object,
   errorsProps?: Object,
 };
-
-export type TextFieldElementProps = {
-  className?: string,
-  inputId: string,
-  name: string,
-  placeholder?: string,
-  value?: string,
-};
