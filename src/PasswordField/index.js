@@ -1,16 +1,11 @@
 /* @flow */
 
 import React from 'react';
-import { composeInputProps } from '../helpers';
-import type { InputProps, TextFieldElementProps } from '../types';
+import type { InputProps } from '../types';
 
-const PasswordField = (props: TextFieldElementProps) => {
-  const inputProps: InputProps = composeInputProps('password', props);
-
-  return (
-    <input type="password" {...inputProps} />
-  );
-};
+const PasswordField = (props: InputProps) => (
+  <input type="password" {...props} />
+);
 PasswordField.defaultProps = {
   className: 'textfield',
 };
