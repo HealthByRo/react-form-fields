@@ -2,10 +2,10 @@
 
 import React from 'react';
 import { shallow } from 'enzyme';
-import PasswordField from './';
+import PasswordInput from './';
 import type { InputProps } from '../types';
 
-describe('<PasswordField />', () => {
+describe('<PasswordInput />', () => {
   let wrapper;
   const defaultProps = {
     name: 'INPUT_NAME',
@@ -13,7 +13,7 @@ describe('<PasswordField />', () => {
   };
   const shallowWithProps = (props: InputProps) => {
     wrapper = shallow(
-      <PasswordField {...props} />
+      <PasswordInput {...props} />
     );
   };
 
