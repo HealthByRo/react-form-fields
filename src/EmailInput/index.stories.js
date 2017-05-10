@@ -1,36 +1,39 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import PasswordField from './';
+import EmailInput from './';
+import createFormField from '../createFormField';
 
-storiesOf('Fields: PasswordField', module)
+const EmailField = createFormField(EmailInput);
+
+storiesOf('Fields: EmailField', module)
   .add('input', () => {
     const props = {
-      name: 'PASSWORD_FIELD_NAME',
+      name: 'EMAIL_FIELD_NAME',
     };
 
     return (
-      <PasswordField {...props} />
+      <EmailField {...props} />
     );
   })
   .add('input + placeholder', () => {
     const props = {
-      name: 'PASSWORD_FIELD_NAME',
-      placeholder: 'Sample password field with placeholder',
+      name: 'EMAIL_FIELD_NAME',
+      placeholder: 'Sample email field with placeholder',
     };
 
     return (
-      <PasswordField {...props} />
+      <EmailField {...props} />
     );
   })
   .add('input + placeholder + error', () => {
     const props = {
       errors: ['Sample error for field'],
-      name: 'PASSWORD_FIELD_NAME',
-      placeholder: 'Sample password field with placeholder',
+      name: 'EMAIL_FIELD_NAME',
+      placeholder: 'Sample email field with placeholder',
     };
 
     return (
-      <PasswordField {...props} />
+      <EmailField {...props} />
     );
   })
   .add('input + placeholder + multiple errors', () => {
@@ -39,33 +42,33 @@ storiesOf('Fields: PasswordField', module)
         'First error for field',
         'Second error for field',
       ],
-      name: 'PASSWORD_FIELD_NAME',
-      placeholder: 'Sample password field with placeholder',
+      name: 'EMAIL_FIELD_NAME',
+      placeholder: 'Sample email field with placeholder',
     };
 
     return (
-      <PasswordField {...props} />
+      <EmailField {...props} />
     );
   })
   .add('input + label', () => {
     const props = {
-      name: 'PASSWORD_FIELD_NAME',
+      name: 'EMAIL_FIELD_NAME',
       label: 'Sample label',
     };
 
     return (
-      <PasswordField {...props} />
+      <EmailField {...props} />
     );
   })
   .add('input + label + error', () => {
     const props = {
       errors: ['Sample error for field'],
-      name: 'PASSWORD_FIELD_NAME',
+      name: 'EMAIL_FIELD_NAME',
       label: 'Sample label',
     };
 
     return (
-      <PasswordField {...props} />
+      <EmailField {...props} />
     );
   })
   .add('input + label + multiple errors', () => {
@@ -74,35 +77,35 @@ storiesOf('Fields: PasswordField', module)
         'First error for field',
         'Second error for field',
       ],
-      name: 'PASSWORD_FIELD_NAME',
+      name: 'EMAIL_FIELD_NAME',
       label: 'Sample label',
     };
 
     return (
-      <PasswordField {...props} />
+      <EmailField {...props} />
     );
   })
   .add('input + label + placeholder', () => {
     const props = {
-      name: 'PASSWORD_FIELD_NAME',
+      name: 'EMAIL_FIELD_NAME',
       label: 'Sample label',
-      placeholder: 'Sample password field with placeholder',
+      placeholder: 'Sample email field with placeholder',
     };
 
     return (
-      <PasswordField {...props} />
+      <EmailField {...props} />
     );
   })
   .add('input + label + placeholder + error', () => {
     const props = {
       errors: ['Sample error for field'],
-      name: 'PASSWORD_FIELD_NAME',
+      name: 'EMAIL_FIELD_NAME',
       label: 'Sample label',
-      placeholder: 'Sample password field with placeholder',
+      placeholder: 'Sample email field with placeholder',
     };
 
     return (
-      <PasswordField {...props} />
+      <EmailField {...props} />
     );
   })
   .add('input + label + placeholder + mutliple errors', () => {
@@ -111,12 +114,12 @@ storiesOf('Fields: PasswordField', module)
         'First error for field',
         'Second error for field',
       ],
-      name: 'PASSWORD_FIELD_NAME',
+      name: 'EMAIL_FIELD_NAME',
       label: 'Sample label',
-      placeholder: 'Sample password field with placeholder',
+      placeholder: 'Sample email field with placeholder',
     };
 
     return (
-      <PasswordField {...props} />
+      <EmailField {...props} />
     );
   });

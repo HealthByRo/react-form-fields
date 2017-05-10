@@ -65,7 +65,7 @@ describe('createFormField(TestField)', () => {
   });
 
   describe('<TestField { name, placeholder, errors: [FIRST_ERROR, SECOND_ERROR] } />', () => {
-    it('should render input with placeholder and two error', () => {
+    it('should render input with placeholder and two errors', () => {
       renderWithProps(getPropsWithName({ placeholder, errors: ['FIRST_ERROR', 'SECOND_ERROR'] }));
 
       expect(tree).toMatchSnapshot();
@@ -89,7 +89,7 @@ describe('createFormField(TestField)', () => {
   });
 
   describe('<TestField { name, label, errors: [FIRST_ERROR, SECOND_ERROR] } />', () => {
-    it('should render input and label and two error', () => {
+    it('should render input and label and two errors', () => {
       renderWithProps(getPropsWithName({ label, errors: ['FIRST_ERROR', 'SECOND_ERROR'] }));
 
       expect(tree).toMatchSnapshot();

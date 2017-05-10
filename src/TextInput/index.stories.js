@@ -1,36 +1,39 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import EmailField from './';
+import TextInput from './';
+import createFormField from '../createFormField';
 
-storiesOf('Fields: EmailField', module)
+const TextField = createFormField(TextInput);
+
+storiesOf('Fields: TextField', module)
   .add('input', () => {
     const props = {
-      name: 'EMAIL_FIELD_NAME',
+      name: 'TEXT_FIELD_NAME',
     };
 
     return (
-      <EmailField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + placeholder', () => {
     const props = {
-      name: 'EMAIL_FIELD_NAME',
-      placeholder: 'Sample email field with placeholder',
+      name: 'TEXT_FIELD_NAME',
+      placeholder: 'Sample text field with placeholder',
     };
 
     return (
-      <EmailField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + placeholder + error', () => {
     const props = {
       errors: ['Sample error for field'],
-      name: 'EMAIL_FIELD_NAME',
-      placeholder: 'Sample email field with placeholder',
+      name: 'TEXT_FIELD_NAME',
+      placeholder: 'Sample text field with placeholder',
     };
 
     return (
-      <EmailField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + placeholder + multiple errors', () => {
@@ -39,33 +42,33 @@ storiesOf('Fields: EmailField', module)
         'First error for field',
         'Second error for field',
       ],
-      name: 'EMAIL_FIELD_NAME',
-      placeholder: 'Sample email field with placeholder',
+      name: 'TEXT_FIELD_NAME',
+      placeholder: 'Sample text field with placeholder',
     };
 
     return (
-      <EmailField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + label', () => {
     const props = {
-      name: 'EMAIL_FIELD_NAME',
+      name: 'TEXT_FIELD_NAME',
       label: 'Sample label',
     };
 
     return (
-      <EmailField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + label + error', () => {
     const props = {
       errors: ['Sample error for field'],
-      name: 'EMAIL_FIELD_NAME',
+      name: 'TEXT_FIELD_NAME',
       label: 'Sample label',
     };
 
     return (
-      <EmailField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + label + multiple errors', () => {
@@ -74,35 +77,35 @@ storiesOf('Fields: EmailField', module)
         'First error for field',
         'Second error for field',
       ],
-      name: 'EMAIL_FIELD_NAME',
+      name: 'TEXT_FIELD_NAME',
       label: 'Sample label',
     };
 
     return (
-      <EmailField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + label + placeholder', () => {
     const props = {
-      name: 'EMAIL_FIELD_NAME',
+      name: 'TEXT_FIELD_NAME',
       label: 'Sample label',
-      placeholder: 'Sample email field with placeholder',
+      placeholder: 'Sample text field with placeholder',
     };
 
     return (
-      <EmailField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + label + placeholder + error', () => {
     const props = {
       errors: ['Sample error for field'],
-      name: 'EMAIL_FIELD_NAME',
+      name: 'TEXT_FIELD_NAME',
       label: 'Sample label',
-      placeholder: 'Sample email field with placeholder',
+      placeholder: 'Sample text field with placeholder',
     };
 
     return (
-      <EmailField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + label + placeholder + mutliple errors', () => {
@@ -111,12 +114,12 @@ storiesOf('Fields: EmailField', module)
         'First error for field',
         'Second error for field',
       ],
-      name: 'EMAIL_FIELD_NAME',
+      name: 'TEXT_FIELD_NAME',
       label: 'Sample label',
-      placeholder: 'Sample email field with placeholder',
+      placeholder: 'Sample text field with placeholder',
     };
 
     return (
-      <EmailField {...props} />
+      <TextField {...props} />
     );
   });

@@ -4,9 +4,9 @@ import React from 'react';
 import type { LabelElementProps } from './types';
 
 const LabelElement = (props: LabelElementProps) => (
-  <label htmlFor={props.inputId}>
+  <label htmlFor={props.htmlFor}>
     {props.children}
-    {props.label}
+    {props.text}
   </label>
 );
 

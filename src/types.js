@@ -15,22 +15,10 @@ export type ErrorsProps = {
   errors: ?ErrorsType,
 };
 
-export type FieldProps = {
-  children?: Children,
-  errors?: ErrorsType,
-  inputId?: string,
-  label?: string,
-  name: string,
-  placeholder?: string,
-  value?: string,
-};
-
-export type TextFieldElementProps = {
+export type LabelProps = {
   className?: string,
-  inputId: string,
-  name: string,
-  placeholder?: string,
-  value?: string,
+  htmlFor: string,
+  text: ?string,
 };
 
 export type InputProps = {
@@ -39,4 +27,18 @@ export type InputProps = {
   name: string,
   placeholder?: string,
   value?: string,
+};
+
+export type FieldProps = {
+  children?: Children,
+  errors?: ErrorsType,
+  inputId?: string,
+  label?: string,
+  name: string,
+  placeholder?: string,
+  value?: string,
+
+  labelProps?: Object,
+  inputProps?: Object,
+  errorsProps?: Object,
 };

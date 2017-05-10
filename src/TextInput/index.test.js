@@ -2,23 +2,23 @@
 
 import React from 'react';
 import { shallow } from 'enzyme';
-import PasswordField from './';
-import type { FieldProps } from '../types';
+import TextInput from './';
+import type { InputProps } from '../types';
 
-describe('<PasswordField />', () => {
+describe('<TextInput />', () => {
   let wrapper;
   const defaultProps = {
     name: 'INPUT_NAME',
-    inputId: 'INPUT_ID',
+    id: 'INPUT_ID',
   };
-  const shallowWithProps = (props: FieldProps) => {
+  const shallowWithProps = (props: InputProps) => {
     wrapper = shallow(
-      <PasswordField {...props} />
+      <TextInput {...props} />
     );
   };
 
   describe('html element', () => {
-    describe('just name and inputId', () => {
+    describe('just name and id', () => {
       beforeEach(() => {
         shallowWithProps(defaultProps);
       });
@@ -27,8 +27,8 @@ describe('<PasswordField />', () => {
         expect(wrapper.name()).toBe('input');
       });
 
-      it('should have [type=password]', () => {
-        expect(wrapper.props().type).toEqual('password');
+      it('should have [type=text]', () => {
+        expect(wrapper.props().type).toEqual('text');
       });
 
       it('should have [name=INPUT_NAME]', () => {
@@ -67,15 +67,6 @@ describe('<PasswordField />', () => {
       });
 
       expect(wrapper.props().placeholder).toEqual('PLACEHOLDER');
-    });
-
-    it('should use id from props.inputId', () => {
-      shallowWithProps({
-        ...defaultProps,
-        inputId: 'INPUT_ID',
-      });
-
-      expect(wrapper.props().id).toEqual('INPUT_ID');
     });
   });
 });

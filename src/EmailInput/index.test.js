@@ -2,18 +2,18 @@
 
 import React from 'react';
 import { shallow } from 'enzyme';
-import TextField from './';
-import type { FieldProps } from '../types';
+import EmailInput from './';
+import type { InputProps } from '../types';
 
-describe('<TextField />', () => {
+describe('<EmailInput />', () => {
   let wrapper;
   const defaultProps = {
     name: 'INPUT_NAME',
-    inputId: 'INPUT_ID',
+    id: 'INPUT_ID',
   };
-  const shallowWithProps = (props: FieldProps) => {
+  const shallowWithProps = (props: InputProps) => {
     wrapper = shallow(
-      <TextField {...props} />
+      <EmailInput {...props} />
     );
   };
 
@@ -27,8 +27,8 @@ describe('<TextField />', () => {
         expect(wrapper.name()).toBe('input');
       });
 
-      it('should have [type=text]', () => {
-        expect(wrapper.props().type).toEqual('text');
+      it('should have [type=email]', () => {
+        expect(wrapper.props().type).toEqual('email');
       });
 
       it('should have [name=INPUT_NAME]', () => {
@@ -67,15 +67,6 @@ describe('<TextField />', () => {
       });
 
       expect(wrapper.props().placeholder).toEqual('PLACEHOLDER');
-    });
-
-    it('should use id from props.inputId', () => {
-      shallowWithProps({
-        ...defaultProps,
-        inputId: 'INPUT_ID',
-      });
-
-      expect(wrapper.props().id).toEqual('INPUT_ID');
     });
   });
 });
