@@ -21,24 +21,6 @@
     "*.js": "lint:eslint"
   },
   "pre-commit": "lint:staged",
-  "babel": {
-    "presets": [
-      "es2015",
-      "stage-0",
-      "react"
-    ]
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "app/**/*.{js,jsx}",
-      "!app/**/*.test{s}.{js,jsx}"
-    ],
-    "moduleDirectories": [
-      "node_modules",
-      "src"
-    ],
-    "testRegex": "src/.*\\.test[s]?\\.js$"
-  },
   "dependencies": {
     "lodash": "^4.17.4",
     "moment": "^2.18.1"

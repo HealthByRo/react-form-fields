@@ -1,4 +1,9 @@
 [ignore]
+.*/node_modules/draft-js/.*
+.*/node_modules/eslint-plugin-jsx-a11y/.*
+.*/node_modules/react-side-effect/.*
+.*/node_modules/redux-saga-test-plan/.*
+.*/node_modules/styled-components/.*
 
 [include]
 
@@ -6,3 +11,4 @@
 
 [options]
 suppress_comment=\\(.\\|\n\\)*\\$FlowExpectedError
+suppress_comment=\\(.\\|\n\\)*\\$FlowFixMe
