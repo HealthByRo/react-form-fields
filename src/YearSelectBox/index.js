@@ -51,4 +51,10 @@ YearSelectBox.propTypes = {
   count: stringOrNumber,
 };
 
+YearSelectBox.defaultProps = {
+  max: undefined,
+  step: undefined,
+  count: undefined,
+};
+
 export default YearSelectBox;
