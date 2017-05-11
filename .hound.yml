@@ -1,2 +1,4 @@
 eslint:
   ignore_file: .eslintignore
+ignore:
+  flow-typed/**
