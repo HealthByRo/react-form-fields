@@ -46,18 +46,20 @@ function composeProps(props: FieldProps): Object {
     name,
     placeholder,
     label,
+    errors,
+    ...inputProps
   } = props;
-  const inputId = props.inputId || generateInputId(props);
+
+  inputProps.id = inputProps.id || generateInputId(inputProps);
+  inputProps.name = name;
+
   const labelProps: LabelProps = {
-    htmlFor: inputId,
+    htmlFor: inputProps.id,
     text: label,
   };
-  const inputProps: InputProps = {
-    name,
-    id: inputId,
-  };
+
   const errorsProps: ErrorsProps = {
-    errors: props.errors,
+    errors,
   };
 
   // don't set placeholder when undefined
