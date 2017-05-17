@@ -5,7 +5,7 @@ import snakeCase from 'lodash/snakeCase';
 import { LabelElement } from './elements';
 import { FieldWrapper } from './wrappers';
 import Errors from './Errors';
-import type { FieldProps, LabelProps, InputProps, ErrorsProps, Component } from './types';
+import type { FieldProps, LabelProps, ErrorsProps, Component } from './types';
 
 export default function createFormField(WrappedComponent: Component<*, FieldProps, *>) {
   return class FormField extends PureComponent {
@@ -46,18 +46,20 @@ function composeProps(props: FieldProps): Object {
     name,
     placeholder,
     label,
+    errors,
+    ...inputProps
   } = props;
-  const inputId = props.inputId || generateInputId(props);
+
+  inputProps.id = inputProps.id || generateInputId(props);
+  inputProps.name = name;
+
   const labelProps: LabelProps = {
-    htmlFor: inputId,
+    htmlFor: inputProps.id,
     text: label,
   };
-  const inputProps: InputProps = {
-    name,
-    id: inputId,
-  };
+
   const errorsProps: ErrorsProps = {
-    errors: props.errors,
+    errors,
   };
 
   // don't set placeholder when undefined
