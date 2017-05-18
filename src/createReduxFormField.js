@@ -36,22 +36,16 @@ export default function createReduxFormField(InputComponent) {
     render() {
       const {
         input,
-        id,
-        label,
-        placeholder,
-        disabled,
         meta: { asyncValidating },
+        ...fieldProps
       } = this.props;
 
       return (
         <div className={asyncValidating ? 'async-validating' : ''}>
           <InputComponent
-            id={id}
-            label={label}
-            placeholder={placeholder}
-            disabled={disabled}
             errors={this.getErrors()}
             {...input}
+            {...fieldProps}
           />
         </div>);
     }
