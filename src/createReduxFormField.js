@@ -13,14 +13,6 @@ export default function createReduxFormField(InputComponent) {
     static propTypes = {
       input: PropTypes.object.isRequired,
       meta: PropTypes.object.isRequired,
-      label: PropTypes.string.isRequired,
-      placeholder: PropTypes.string.isRequired,
-      id: PropTypes.string.isRequired,
-      disabled: PropTypes.bool,
-    };
-
-    static defaultProps = {
-      disabled: false,
     };
 
     getErrors() {
