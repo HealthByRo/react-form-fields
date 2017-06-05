@@ -18,6 +18,18 @@ describe('<MonthSelectBox />', () => {
   it('should render options with full name of months', () => {
     expectToHasOptions(renderedMonthSelectBox, moment.months());
   });
+
+  it('should render children if any provided', () => {
+    const CustomOption = () => <option>CUSTOM_OPTION</option>;
+
+    renderedMonthSelectBox = shallow(
+      <MonthSelectBox>
+        <CustomOption />
+      </MonthSelectBox>
+    );
+
+    expect(renderedMonthSelectBox.find(CustomOption).length).toBe(1);
+  });
 });
 
 describe('<MonthSelectBox mode="short" />', () => {
