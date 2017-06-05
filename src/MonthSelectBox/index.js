@@ -30,6 +30,7 @@ class MonthSelectBox extends PureComponent { // eslint-disable-line react/prefer
 
     return (
       <select {...this.props} >
+        {this.props.children}
         {
           // eslint-disable-next-line react/no-array-index-key
           months.map((month, index) => <option key={index} value={index}>{ month }</option>)
@@ -40,10 +41,12 @@ class MonthSelectBox extends PureComponent { // eslint-disable-line react/prefer
 }
 
 MonthSelectBox.propTypes = {
+  children: PropTypes.element,
   mode: PropTypes.string,
 };
 
 MonthSelectBox.defaultProps = {
+  children: null,
   mode: 'full',
 };
 

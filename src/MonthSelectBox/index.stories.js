@@ -28,4 +28,11 @@ storiesOf('MonthSelectBox', module)
       defaultValue="4"
       onClick={action('clicked')}
     />
+  ))
+  .add('with custom children', () => (
+    <MonthSelectBox
+      onClick={action('clicked')}
+    >
+      <option value="">pick a month!</option>
+    </MonthSelectBox>
   ));
