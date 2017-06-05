@@ -3,6 +3,20 @@ import { shallow } from 'enzyme';
 
 import YearSelectBox from './index';
 
+describe('<YearSelectBox />', () => {
+  it('should render children if any provided', () => {
+    const CustomOption = () => <option>CUSTOM_OPTION</option>;
+
+    const renderedYearSelectBox = shallow(
+      <YearSelectBox>
+        <CustomOption />
+      </YearSelectBox>
+    );
+
+    expect(renderedYearSelectBox.find(CustomOption).length).toBe(1);
+  });
+});
+
 describe('<YearSelectBox min={2015} max={2020} />', () => {
   let renderedYearSelectBox;
 
