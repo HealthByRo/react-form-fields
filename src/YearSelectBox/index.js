@@ -28,11 +28,19 @@ class YearSelectBox extends PureComponent { // eslint-disable-line react/prefer-
   }
 
   render() {
-    const { min, max, step, count, ...selectProps } = this.props; // eslint-disable-line no-unused-vars
+    const {
+      min,
+      max,
+      step,
+      count,
+      children,
+      ...selectProps
+    } = this.props; // eslint-disable-line no-unused-vars
     const years = this.getYears();
 
     return (
       <select {...selectProps} >
+        {children}
         {years.map((year) => <option key={year} value={year}>{ year }</option>)}
       </select>
     );
@@ -49,12 +57,14 @@ YearSelectBox.propTypes = {
   max: stringOrNumber,
   step: stringOrNumber,
   count: stringOrNumber,
+  children: PropTypes.any,
 };
 
 YearSelectBox.defaultProps = {
   max: undefined,
-  step: undefined,
   count: undefined,
+  step: 1,
+  children: null,
 };
 
 export default YearSelectBox;
