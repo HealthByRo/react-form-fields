@@ -37,4 +37,13 @@ storiesOf('YearSelectBox', module)
       step="10"
       onClick={action('clicked')}
     />
+  ))
+  .add('with custom children', () => (
+    <YearSelectBox
+      min="2015"
+      max="2020"
+      onClick={action('clicked')}
+    >
+      <option value="">select year</option>
+    </YearSelectBox>
   ));
