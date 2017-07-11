@@ -7,7 +7,7 @@
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
-    "build": "babel --presets es2015,stage-0 -d lib/ src/ --ignore \"**/*.test.js\",\"**/*.stories.js\"",
+    "build": "babel -d lib/ src/ --ignore \"**/*.test.js\",\"**/*.stories.js\"",
     "test": "jest --coverage",
     "test:watch": "jest --watchAll",
     "storybook": "start-storybook -p 6006",
@@ -21,24 +21,6 @@
     "*.js": "lint:eslint"
   },
   "pre-commit": "lint:staged",
-  "babel": {
-    "presets": [
-      "es2015",
-      "stage-0",
-      "react"
-    ]
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "app/**/*.{js,jsx}",
-      "!app/**/*.test{s}.{js,jsx}"
-    ],
-    "moduleDirectories": [
-      "node_modules",
-      "src"
-    ],
-    "testRegex": "src/.*\\.test[s]?\\.js$"
-  },
   "dependencies": {
     "immutable": "v4.0.0-rc.2",
     "lodash": "^4.17.4",
