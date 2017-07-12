@@ -1,4 +1,4 @@
-import FormField from '../';
+import EmailField from '../';
 import createReduxFormField from '../../createReduxFormField';
 
-export default createReduxFormField(FormField);
+export default createReduxFormField(EmailField);
