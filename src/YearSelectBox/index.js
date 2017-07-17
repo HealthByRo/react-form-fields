@@ -1,13 +1,14 @@
-/**
-*
-* YearSelectBox
-*
-*/
+/* @flow */
 
-import React, { PureComponent, PropTypes } from 'react';
+import React, { PureComponent } from 'react';
 import _range from 'lodash/range';
+import type { YearSelectBoxProps } from '../types';
 
-class YearSelectBox extends PureComponent { // eslint-disable-line react/prefer-stateless-function
+export default class YearSelectBox extends PureComponent {
+  static defaultProps = {
+    step: 1,
+  }
+
   getYears() {
     const { min, step } = this.props;
     const max = this.getMax() + 1;
@@ -26,6 +27,8 @@ class YearSelectBox extends PureComponent { // eslint-disable-line react/prefer-
 
     return max;
   }
+
+  props: YearSelectBoxProps
 
   render() {
     const {
@@ -46,25 +49,3 @@ class YearSelectBox extends PureComponent { // eslint-disable-line react/prefer-
     );
   }
 }
-
-const stringOrNumber = PropTypes.oneOfType([
-  PropTypes.string,
-  PropTypes.number,
-]);
-
-YearSelectBox.propTypes = {
-  min: stringOrNumber.isRequired,
-  max: stringOrNumber,
-  step: stringOrNumber,
-  count: stringOrNumber,
-  children: PropTypes.any,
-};
-
-YearSelectBox.defaultProps = {
-  max: undefined,
-  count: undefined,
-  step: 1,
-  children: null,
-};
-
-export default YearSelectBox;

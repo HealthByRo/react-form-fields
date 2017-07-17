@@ -1,3 +1,5 @@
+/* @flow */
+
 import PasswordField from '../';
 import createReduxFormField from '../../createReduxFormField';
 

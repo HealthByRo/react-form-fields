@@ -1,3 +1,5 @@
+/* @flow */
+
 import TextField from '../';
 import createReduxFormField from '../../createReduxFormField';
 

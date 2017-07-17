@@ -5,9 +5,15 @@ import snakeCase from 'lodash/snakeCase';
 import { LabelElement } from './elements';
 import { FieldWrapper } from './wrappers';
 import Errors from './Errors';
-import type { FieldProps, LabelProps, ErrorsProps, Component } from './types';
+import type {
+  FieldProps,
+  LabelProps,
+  ErrorsProps,
+  Component,
+  WrappedComponentProps,
+} from './types';
 
-export default function createFormField(WrappedComponent: Component<*, FieldProps, *>) {
+export default function createFormField(WrappedComponent: Component<*, WrappedComponentProps, *>) {
   return class FormField extends PureComponent {
     constructor(props: FieldProps) {
       super(props);

@@ -5,14 +5,17 @@ import type { Children } from 'react';
 /* eslint-disable no-undef */
 export type FunctionComponent<P> = (props: P) => ?React$Element<any>;
 export type ClassComponent<D, P, S> = Class<React$Component<D, P, S>>;
+export type ClassPureComponent<D, P, S> = Class<React$PureComponent<D, P, S>>;
 /* eslint-enable no-undef */
 
 export type Component<D, P, S> = ClassComponent<D, P, S> | FunctionComponent<P>
 
+export type StringOrNumber = string | number
+
 export type ErrorsType = Array<string>;
 
 export type ErrorsProps = {
-  errors: ?ErrorsType,
+  errors?: ?ErrorsType,
 };
 
 export type LabelProps = {
@@ -21,24 +24,49 @@ export type LabelProps = {
   text: ?string,
 };
 
+export type FieldProps = {
+  className?: string,
+  count?: StringOrNumber,
+  errors?: ErrorsType,
+  id?: string,
+  label?: string,
+  min?: StringOrNumber,
+  max?: StringOrNumber,
+  name: string,
+  placeholder?: string,
+  onClick?: () => void,
+  step?: StringOrNumber,
+  value?: string,
+
+  labelProps?: LabelProps,
+  inputProps?: InputProps,
+  errorsProps?: ErrorsProps,
+};
+
+export type WrappedComponentProps = InputProps | MonthSelectBoxProps | YearSelectBoxProps
+
 export type InputProps = {
   className?: string,
-  id: string,
+  id?: string,
   name: string,
   placeholder?: string,
   value?: string,
+  onClick?: () => void,
 };
 
-export type FieldProps = {
+export type MonthSelectBoxProps = {
   children?: Children,
-  errors?: ErrorsType,
-  inputId?: string,
-  label?: string,
+  className?: string,
   name: string,
-  placeholder?: string,
-  value?: string,
+  mode?: 'full' | 'numbers' | 'short',
+}
 
-  labelProps?: Object,
-  inputProps?: Object,
-  errorsProps?: Object,
-};
+export type YearSelectBoxProps = {
+  children?: Children,
+  className?: string,
+  count?: StringOrNumber,
+  max?: StringOrNumber,
+  min: StringOrNumber,
+  name: string,
+  step?: StringOrNumber,
+}
