@@ -163,3 +163,44 @@ Output html:
   </div>
 </div>
 ```
+
+## Creating custom field with createFormField
+When no predefined fields matches your requirements, use createFormField to make your own.
+
+Code:
+```javascript
+import createFormField from 'react-form-fields/lib/createFormField';
+
+const CustomInput = (props) => (
+  <input
+    {...props}
+    type="tel"
+    className="customInputClassName"
+  />
+);
+
+const CustomField = createFormField(CustomInput);
+…
+  // inside render function
+  <CustomField
+    name="phoneNumber"
+    label="Phone number"
+    placeholder="Enter your phone number"
+  />
+```
+
+Output html:
+```html
+<div class="form-item">
+  <label for="id_phone_number">
+    Phone number
+  </label>
+  <input
+    type="tel"
+    id="id_phone_number"
+    name="phoneNumber"
+    placeholder="Enter your phone number"
+    class="customInputClassName"
+  />
+</div>
+```
