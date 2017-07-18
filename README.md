@@ -287,3 +287,20 @@ import PasswordField from 'react-form-fields/lib/PasswordField/reduxForm';
 import MonthSelectField from 'react-form-fields/lib/MonthSelectField/reduxForm';
 import YearSelectField from 'react-form-fields/lib/YearSelectField/reduxForm';
 ```
+
+# Available Props
+ prop name    | optional | value                | applies to         | description
+-----------------------------------------------------------------------------------------------------------------
+`className`   | optional | string               | all except selects | `class` attribute of `input` element
+`count`       | optional | string or number     | `YearSelectField`  | how many years to display
+`defaultValue`| optional | string               | all                | initial value of `input` or `select` element
+`errors`      | optional | array<string>        | all                | error messages displayed below field
+`id`          | optional | string               | all                | `id` attribute of `input` element, `htmlFor` attribute of `label` element
+`label`       | optional | string               | all                | text of `label` element
+`max`         | optional | string or number     | `YearSelectField`  | latest year that can be displayed
+`min`         | required | string or number     | `YearSelectField`  | first year that should be displayed
+`mode`        | optional | `full|numbers|short` | `MonthSelectField` | how to display months: `full` - full month name, `short` - short month name, `number` - month number (1-12)
+`name`        | required | string               | all                | `name` attribute of `input` element
+`placeholder` | optional | string               | all except selects | `placeholder` attribute of `input` element
+`step`        | optional | string or number     | `YearSelectField`  | how many years between displayed options, default is 1
+any prop      | optional | any value            | all                | any custom prop will be copiet do `input` or `select` element
