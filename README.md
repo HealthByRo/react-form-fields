@@ -18,36 +18,23 @@ react-form-fields are helpers for creating a component (called form field) with:
 ## Storybook
 Run `yarn start storybook` to see [storybook](https://storybook.js.org/) with complete list of examples.
 
-## TextField example
-
-Code:
+## Simplest example
+TextField is one of predefined fields, all it requires is a `name` prop:
 ```javascript
 import { TextField } from 'react-form-fields/lib/TextField';
 …
-  // inside render method
-  <TextField
-    name="message"
-    label="Your message"
-    placeholder="Enter your message here"
-    errors={['Something went wrong']}
-  />
+  // inside render function
+  <TextField name="message" />
 ```
 
 Output html:
 ```html
 <div class="form-item">
-  <label for="id_message">
-    Your message
-  </label>
   <input
     type="text"
     id="id_message"
     name="message"
-    placeholder="Enter your message here"
     class="textfield"
   />
-  <div class="msg msg--error">
-    Something went wrong
-  </div>
 </div>
 ```
