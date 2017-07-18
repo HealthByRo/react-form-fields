@@ -12,6 +12,8 @@ export type Component<D, P, S> = ClassComponent<D, P, S> | FunctionComponent<P>
 
 export type StringOrNumber = string | number
 
+export type MonthSelectMode = 'full' | 'numbers' | 'short'
+
 export type ErrorsType = Array<string>;
 
 export type ErrorsProps = {
@@ -33,6 +35,7 @@ export type FieldProps = {
   label?: string,
   min?: StringOrNumber,
   max?: StringOrNumber,
+  mode?: MonthSelectMode,
   name: string,
   placeholder?: string,
   onClick?: () => void,
@@ -59,7 +62,7 @@ export type MonthSelectBoxProps = {
   className?: string,
   defaultValue?: string,
   name: string,
-  mode?: 'full' | 'numbers' | 'short',
+  mode?: MonthSelectMode,
 }
 
 export type YearSelectBoxProps = {
