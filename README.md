@@ -38,3 +38,66 @@ Output html:
   />
 </div>
 ```
+
+## Displaying errors
+Every field accepts `errors` prop with an array of strings containing error messages related to the field.
+
+Code:
+```javascript
+import { TextField } from 'react-form-fields/lib/TextField';
+…
+  // inside render function
+  <TextField
+    name="message"
+    errors={['Error message']}
+  />
+```
+
+Output html:
+```html
+<div class="form-item">
+  <input
+    type="text"
+    id="id_message"
+    name="message"
+    class="textfield"
+  />
+  <div class="msg msg--error">
+    Error message
+  </div>
+</div>
+```
+
+When more than one error message is present, all errors are wrapped with additional `<div class="errors-list" />` element:
+```javascript
+import { TextField } from 'react-form-fields/lib/TextField';
+…
+  // inside render function
+  <TextField
+    name="message"
+    errors={[
+      'First error message',
+      'Second error message'
+    ]}
+  />
+```
+
+Output html:
+```html
+<div class="form-item">
+  <input
+    type="text"
+    id="id_message"
+    name="message"
+    class="textfield"
+  />
+  <div class="errors-list">
+    <div class="msg msg--error">
+      First error message
+    </div>
+    <div class="msg msg--error">
+      Second error message
+    </div>
+  </div>
+</div>
+```
