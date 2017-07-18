@@ -230,3 +230,39 @@ Output html:
 </div>
 ```
 
+## Creating custom field for redux-form with createReduxFormField
+In order to be able to use `CustomField` created with `createFormField` in Redux Form, simpy pass output of `createReduxFormField(CustomField)` as a `component` param of `Field`:
+```javascript
+import createFormField from 'react-form-fields/lib/createFormField';
+import createReduxFormField from 'react-form-fields/lib/createReduxFormField';
+
+const CustomInput = (props) => (
+  <input
+    {...props}
+    type="tel"
+    className="customInputClassName"
+  />
+);
+
+const CustomReduxField = createReduxFormField(
+  createFormField(CustomInput)
+);
+…
+  // inside render function
+  <Field
+    name="message"
+    component={CustomReduxField}
+  />
+```
+
+Output html:
+```html
+<div class="form-item">
+  <input
+    type="text"
+    id="id_message"
+    name="message"
+    class="textfield"
+  />
+</div>
+```
