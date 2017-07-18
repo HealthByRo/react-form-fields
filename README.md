@@ -129,3 +129,37 @@ Output html:
   />
 </div>
 ```
+
+## Optional props for all fields
+Every field accepts the following optional props:
+1. `placeholder` - text to render inside `input` element (**not yet available for selects**)
+2. `id` - optional id that will be used for `input` + `label`. Default id is `id_` + name in snake_case
+
+Code:
+```javascript
+import { TextField } from 'react-form-fields/lib/TextField';
+…
+  // inside render function
+  <TextField
+    name="message"
+    placeholder="Enter your message here"
+    id="customID"
+    errors={['Error message']}
+  />
+```
+
+Output html:
+```html
+<div class="form-item">
+  <input
+    type="text"
+    id="customID"
+    name="message"
+    placeholder="Enter your message here"
+    class="textfield"
+  />
+  <div class="msg msg--error">
+    Error message
+  </div>
+</div>
+```
