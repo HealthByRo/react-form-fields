@@ -1,7 +1,10 @@
 /* @flow */
 
 import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
+import {
+  storiesOf,
+  action,
+} from '@kadira/storybook';
 import MonthSelectField from './';
 
 const defaultProps = {
