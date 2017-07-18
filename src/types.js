@@ -10,15 +10,15 @@ export type ClassPureComponent<D, P, S> = Class<React$PureComponent<D, P, S>>;
 
 export type Component<D, P, S> = ClassComponent<D, P, S> | FunctionComponent<P>
 
-export type StringOrNumber = string | number
-
-export type MonthSelectMode = 'full' | 'numbers' | 'short'
-
 export type ErrorsType = Array<string>;
 
 export type ErrorsProps = {
   errors?: ?ErrorsType,
 };
+
+export type MonthSelectMode = 'full' | 'numbers' | 'short'
+
+export type StringOrNumber = string | number
 
 export type LabelProps = {
   className?: string,
@@ -33,43 +33,43 @@ export type FieldProps = {
   errors?: ErrorsType,
   id?: string,
   label?: string,
-  min?: StringOrNumber,
   max?: StringOrNumber,
+  min?: StringOrNumber,
   mode?: MonthSelectMode,
   name: string,
   placeholder?: string,
   onClick?: () => void,
   step?: StringOrNumber,
 
-  labelProps?: LabelProps,
-  inputProps?: InputProps,
   errorsProps?: ErrorsProps,
+  inputProps?: InputProps,
+  labelProps?: LabelProps,
 };
 
 export type WrappedComponentProps = InputProps | MonthSelectBoxProps | YearSelectBoxProps
 
 export type InputProps = {
   className?: string,
+  defaultValue?: string,
   id?: string,
   name: string,
-  placeholder?: string,
-  defaultValue?: string,
   onClick?: () => void,
+  placeholder?: string,
 };
 
 export type MonthSelectBoxProps = {
   children?: Children,
   className?: string,
   defaultValue?: string,
-  name: string,
   mode?: MonthSelectMode,
+  name: string,
 }
 
 export type YearSelectBoxProps = {
   children?: Children,
   className?: string,
-  defaultValue?: string,
   count?: StringOrNumber,
+  defaultValue?: string,
   max?: StringOrNumber,
   min: StringOrNumber,
   name: string,
