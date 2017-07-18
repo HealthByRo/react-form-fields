@@ -39,6 +39,31 @@ Output html:
 </div>
 ```
 
+## Usage with redux-form
+For use with [Redux Form](http://redux-form.com) just add `reduxForm` at the end of import and pass your props directly to `Field` component:
+```javascript
+import { TextField } from 'react-form-fields/lib/TextField/reduxForm';
+import { Field } from 'redux-form';
+…
+  // inside render function
+  <Field
+    name="message"
+    component={TextField}
+  />
+```
+
+Output html:
+```html
+<div class="form-item">
+  <input
+    type="text"
+    id="id_message"
+    name="message"
+    class="textfield"
+  />
+</div>
+```
+
 ## Displaying errors
 Every field accepts `errors` prop with an array of strings containing error messages related to the field.
 
@@ -204,3 +229,4 @@ Output html:
   />
 </div>
 ```
+
