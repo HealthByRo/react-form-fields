@@ -289,8 +289,8 @@ import YearSelectField from 'react-form-fields/lib/YearSelectField/reduxForm';
 ```
 
 # Available Props
- prop name    | optional | value                | applies to         | description
------------------------------------------------------------------------------------------------------------------
+prop name     | optional | value                | applies to         | description
+------------- | -------- | -------------------- | ------------------ | -------------------------------------
 `className`   | optional | string               | all except selects | `class` attribute of `input` element
 `count`       | optional | string or number     | `YearSelectField`  | how many years to display
 `defaultValue`| optional | string               | all                | initial value of `input` or `select` element
