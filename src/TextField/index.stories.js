@@ -1,39 +1,36 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import PasswordInput from './';
-import createFormField from '../createFormField';
+import TextField from './';
 
-const PasswordField = createFormField(PasswordInput);
-
-storiesOf('Fields: PasswordField', module)
+storiesOf('Fields: TextField', module)
   .add('input', () => {
     const props = {
-      name: 'PASSWORD_FIELD_NAME',
+      name: 'TEXT_FIELD_NAME',
     };
 
     return (
-      <PasswordField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + placeholder', () => {
     const props = {
-      name: 'PASSWORD_FIELD_NAME',
-      placeholder: 'Sample password field with placeholder',
+      name: 'TEXT_FIELD_NAME',
+      placeholder: 'Sample text field with placeholder',
     };
 
     return (
-      <PasswordField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + placeholder + error', () => {
     const props = {
       errors: ['Sample error for field'],
-      name: 'PASSWORD_FIELD_NAME',
-      placeholder: 'Sample password field with placeholder',
+      name: 'TEXT_FIELD_NAME',
+      placeholder: 'Sample text field with placeholder',
     };
 
     return (
-      <PasswordField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + placeholder + multiple errors', () => {
@@ -42,33 +39,33 @@ storiesOf('Fields: PasswordField', module)
         'First error for field',
         'Second error for field',
       ],
-      name: 'PASSWORD_FIELD_NAME',
-      placeholder: 'Sample password field with placeholder',
+      name: 'TEXT_FIELD_NAME',
+      placeholder: 'Sample text field with placeholder',
     };
 
     return (
-      <PasswordField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + label', () => {
     const props = {
-      name: 'PASSWORD_FIELD_NAME',
+      name: 'TEXT_FIELD_NAME',
       label: 'Sample label',
     };
 
     return (
-      <PasswordField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + label + error', () => {
     const props = {
       errors: ['Sample error for field'],
-      name: 'PASSWORD_FIELD_NAME',
+      name: 'TEXT_FIELD_NAME',
       label: 'Sample label',
     };
 
     return (
-      <PasswordField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + label + multiple errors', () => {
@@ -77,35 +74,35 @@ storiesOf('Fields: PasswordField', module)
         'First error for field',
         'Second error for field',
       ],
-      name: 'PASSWORD_FIELD_NAME',
+      name: 'TEXT_FIELD_NAME',
       label: 'Sample label',
     };
 
     return (
-      <PasswordField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + label + placeholder', () => {
     const props = {
-      name: 'PASSWORD_FIELD_NAME',
+      name: 'TEXT_FIELD_NAME',
       label: 'Sample label',
-      placeholder: 'Sample password field with placeholder',
+      placeholder: 'Sample text field with placeholder',
     };
 
     return (
-      <PasswordField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + label + placeholder + error', () => {
     const props = {
       errors: ['Sample error for field'],
-      name: 'PASSWORD_FIELD_NAME',
+      name: 'TEXT_FIELD_NAME',
       label: 'Sample label',
-      placeholder: 'Sample password field with placeholder',
+      placeholder: 'Sample text field with placeholder',
     };
 
     return (
-      <PasswordField {...props} />
+      <TextField {...props} />
     );
   })
   .add('input + label + placeholder + mutliple errors', () => {
@@ -114,12 +111,12 @@ storiesOf('Fields: PasswordField', module)
         'First error for field',
         'Second error for field',
       ],
-      name: 'PASSWORD_FIELD_NAME',
+      name: 'TEXT_FIELD_NAME',
       label: 'Sample label',
-      placeholder: 'Sample password field with placeholder',
+      placeholder: 'Sample text field with placeholder',
     };
 
     return (
-      <PasswordField {...props} />
+      <TextField {...props} />
     );
   });
