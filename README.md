@@ -4,7 +4,8 @@
 [![bitHound Code](https://www.bithound.io/bitbucket/arabellatech/react-form-fields/badges/code.svg)](https://www.bithound.io/bitbucket/arabellatech/react-form-fields)
 
 # About
-react-form-fields are helpers for creating a component (called form field) with:
+`react-form-fields` are helpers for creating a component (called form field) with:
+
 1. label
 2. input/select
 3. errors
@@ -157,6 +158,7 @@ Output html:
 
 ## Optional props for all fields
 Every field accepts the following optional props:
+
 1. `placeholder` - text to render inside `input` element (**not yet available for selects**)
 2. `id` - optional id that will be used for `input` + `label`. Default id is `id_` + name in snake_case
 
@@ -190,7 +192,7 @@ Output html:
 ```
 
 ## Creating custom field with createFormField
-When no predefined fields matches your requirements, use createFormField to make your own.
+When no predefined fields matches your requirements, use `createFormField` to make your own.
 
 Code:
 ```javascript
