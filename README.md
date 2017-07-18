@@ -101,3 +101,31 @@ Output html:
   </div>
 </div>
 ```
+
+## Displaying label
+Every field accepts `label` prop with a strings containing text to be displayed inside `label` element:
+Code:
+```javascript
+import { TextField } from 'react-form-fields/lib/TextField';
+…
+  // inside render function
+  <TextField
+    name="message"
+    label="Your message"
+  />
+```
+
+Output html:
+```html
+<div class="form-item">
+  <label for="customID">
+    Your message
+  </label>
+  <input
+    type="text"
+    id="id_message"
+    name="message"
+    class="textfield"
+  />
+</div>
+```
