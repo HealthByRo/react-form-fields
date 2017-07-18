@@ -268,3 +268,22 @@ Output html:
   />
 </div>
 ```
+
+# Available fields
+## Regular fields
+```javascript
+import TextField from 'react-form-fields/lib/TextField';
+import EmailField from 'react-form-fields/lib/EmailField';
+import PasswordField from 'react-form-fields/lib/PasswordField';
+import MonthSelectField from 'react-form-fields/lib/MonthSelectField';
+import YearSelectField from 'react-form-fields/lib/YearSelectField';
+```
+
+## Redux Form fields
+```javascript
+import TextField from 'react-form-fields/lib/TextField/reduxForm';
+import EmailField from 'react-form-fields/lib/EmailField/reduxForm';
+import PasswordField from 'react-form-fields/lib/PasswordField/reduxForm';
+import MonthSelectField from 'react-form-fields/lib/MonthSelectField/reduxForm';
+import YearSelectField from 'react-form-fields/lib/YearSelectField/reduxForm';
+```
