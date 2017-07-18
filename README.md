@@ -20,7 +20,7 @@
 Run `yarn start storybook` to see [storybook](https://storybook.js.org/) with complete list of examples.
 
 ## Simplest example
-TextField is one of predefined fields, all it requires is a `name` prop:
+`TextField` is one of predefined fields, all it requires is a `name` prop:
 ```javascript
 import { TextField } from 'react-form-fields/lib/TextField';
 …
@@ -160,7 +160,7 @@ Output html:
 Every field accepts the following optional props:
 
 1. `placeholder` - text to render inside `input` element (**not yet available for selects**)
-2. `id` - optional id that will be used for `input` + `label`. Default id is `id_` + name in snake_case
+2. `id` - optional id that will be used for `input` + `label`. Default id is `id_` + `name` in snake_case
 
 Code:
 ```javascript
