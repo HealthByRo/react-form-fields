@@ -27,6 +27,7 @@ export type LabelProps = {
 export type FieldProps = {
   className?: string,
   count?: StringOrNumber,
+  defaultValue?: string,
   errors?: ErrorsType,
   id?: string,
   label?: string,
@@ -36,7 +37,6 @@ export type FieldProps = {
   placeholder?: string,
   onClick?: () => void,
   step?: StringOrNumber,
-  value?: string,
 
   labelProps?: LabelProps,
   inputProps?: InputProps,
@@ -50,13 +50,14 @@ export type InputProps = {
   id?: string,
   name: string,
   placeholder?: string,
-  value?: string,
+  defaultValue?: string,
   onClick?: () => void,
 };
 
 export type MonthSelectBoxProps = {
   children?: Children,
   className?: string,
+  defaultValue?: string,
   name: string,
   mode?: 'full' | 'numbers' | 'short',
 }
@@ -64,6 +65,7 @@ export type MonthSelectBoxProps = {
 export type YearSelectBoxProps = {
   children?: Children,
   className?: string,
+  defaultValue?: string,
   count?: StringOrNumber,
   max?: StringOrNumber,
   min: StringOrNumber,
