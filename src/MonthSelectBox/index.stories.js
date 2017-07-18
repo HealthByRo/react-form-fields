@@ -1,10 +1,8 @@
-/*
- * MonthSelectBox Stories
- *
- * This contains all the stories for the MonthSelectBox component.
- */
 import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
+import {
+  storiesOf,
+  action,
+} from '@kadira/storybook';
 import MonthSelectBox from './';
 
 storiesOf('MonthSelectBox', module)
