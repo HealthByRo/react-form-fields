@@ -4,10 +4,10 @@
 [![bitHound Code](https://www.bithound.io/bitbucket/arabellatech/react-form-fields/badges/code.svg)](https://www.bithound.io/bitbucket/arabellatech/react-form-fields)
 
 # About
-`react-form-fields` are helpers for creating a component (called form field) with:
+`react-form-fields` contains predefined fields and helper to create your own custom field. Every field contains:
 
 1. label
-2. input/select
+2. input/select/custom component
 3. errors
 
 # Installation
