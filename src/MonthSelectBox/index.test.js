@@ -1,3 +1,5 @@
+/* @flow */
+
 import React from 'react';
 import { shallow } from 'enzyme';
 import moment from 'moment';
@@ -8,7 +10,7 @@ describe('<MonthSelectBox />', () => {
   let renderedMonthSelectBox;
 
   beforeEach(() => {
-    renderedMonthSelectBox = shallow(<MonthSelectBox />);
+    renderedMonthSelectBox = shallow(<MonthSelectBox name="MONT_SELECT_BOX_NAME" />);
   });
 
   it('should render a select box', () => {
@@ -23,7 +25,7 @@ describe('<MonthSelectBox />', () => {
     const CustomOption = () => <option>CUSTOM_OPTION</option>;
 
     renderedMonthSelectBox = shallow(
-      <MonthSelectBox>
+      <MonthSelectBox name="MONT_SELECT_BOX_NAME">
         <CustomOption />
       </MonthSelectBox>
     );
@@ -36,7 +38,7 @@ describe('<MonthSelectBox mode="short" />', () => {
   let renderedMonthSelectBox;
 
   beforeEach(() => {
-    renderedMonthSelectBox = shallow(<MonthSelectBox mode="short" />);
+    renderedMonthSelectBox = shallow(<MonthSelectBox name="MONT_SELECT_BOX_NAME" mode="short" />);
   });
 
   it('should render a select box', () => {
@@ -52,7 +54,7 @@ describe('<MonthSelectBox mode="numbers" />', () => {
   let renderedMonthSelectBox;
 
   beforeEach(() => {
-    renderedMonthSelectBox = shallow(<MonthSelectBox mode="numbers" />);
+    renderedMonthSelectBox = shallow(<MonthSelectBox name="MONT_SELECT_BOX_NAME" mode="numbers" />);
   });
 
   it('should render a select box', () => {

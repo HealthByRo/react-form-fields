@@ -1,3 +1,5 @@
+/* @flow */
+
 import React from 'react';
 import { shallow } from 'enzyme';
 
@@ -8,7 +10,7 @@ describe('<YearSelectBox />', () => {
     const CustomOption = () => <option>CUSTOM_OPTION</option>;
 
     const renderedYearSelectBox = shallow(
-      <YearSelectBox>
+      <YearSelectBox name="YEAR_SELECT_BOX_FIELD" min="2000">
         <CustomOption />
       </YearSelectBox>
     );
@@ -21,7 +23,7 @@ describe('<YearSelectBox min={2015} max={2020} />', () => {
   let renderedYearSelectBox;
 
   beforeEach(() => {
-    renderedYearSelectBox = shallow(<YearSelectBox min={2015} max={2020} />);
+    renderedYearSelectBox = shallow(<YearSelectBox name="YEAR_SELECT_BOX_FIELD" min={2015} max={2020} />);
   });
 
   it('should render a select box', () => {
@@ -37,7 +39,7 @@ describe('<YearSelectBox min={2000} max={2100} step={10} />', () => {
   let renderedYearSelectBox;
 
   beforeEach(() => {
-    renderedYearSelectBox = shallow(<YearSelectBox min={2000} max={2100} step={10} />);
+    renderedYearSelectBox = shallow(<YearSelectBox name="YEAR_SELECT_BOX_FIELD" min={2000} max={2100} step={10} />);
   });
 
   it('should render a select box', () => {
@@ -53,7 +55,8 @@ describe('<YearSelectBox min="2000" max="2200" step="20" />', () => {
   let renderedYearSelectBox;
 
   beforeEach(() => {
-    renderedYearSelectBox = shallow(<YearSelectBox min="2000" max="2200" step="20" />);
+    // $FlowFixMe
+    renderedYearSelectBox = shallow(<YearSelectBox name="YEAR_SELECT_BOX_FIELD" min="2000" max="2200" step="20" />);
   });
 
   it('should render a select box', () => {
@@ -69,7 +72,7 @@ describe('<YearSelectBox min={2017} count={5} />', () => {
   let renderedYearSelectBox;
 
   beforeEach(() => {
-    renderedYearSelectBox = shallow(<YearSelectBox min={2017} count={5} />);
+    renderedYearSelectBox = shallow(<YearSelectBox name="YEAR_SELECT_BOX_FIELD" min={2017} count={5} />);
   });
 
   it('should render a select box', () => {
@@ -85,7 +88,8 @@ describe('<YearSelectBox min="2020" count="10" />', () => {
   let renderedYearSelectBox;
 
   beforeEach(() => {
-    renderedYearSelectBox = shallow(<YearSelectBox min="2020" count="10" step="2" />);
+    // $FlowFixMe
+    renderedYearSelectBox = shallow(<YearSelectBox name="YEAR_SELECT_BOX_FIELD" min="2020" count="10" step="2" />);
   });
 
   it('should render a select box', () => {
@@ -101,7 +105,7 @@ describe('<YearSelectBox min={2017} count={5} defaultValue="2018" />', () => {
   let renderedYearSelectBox;
 
   beforeEach(() => {
-    renderedYearSelectBox = shallow(<YearSelectBox min={2017} count={5} defaultValue="2018" />);
+    renderedYearSelectBox = shallow(<YearSelectBox name="YEAR_SELECT_BOX_FIELD" min={2017} count={5} defaultValue="2018" />);
   });
 
   it('should render a select box', () => {

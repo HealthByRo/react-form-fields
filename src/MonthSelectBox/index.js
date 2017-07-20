@@ -1,15 +1,16 @@
-/**
-*
-* MonthSelectBox
-*
-*/
+/* @flow */
 
-import React, { PureComponent, PropTypes } from 'react';
+import React, { PureComponent } from 'react';
 import moment from 'moment';
 import _range from 'lodash/range';
 import _padStart from 'lodash/padStart';
+import type { MonthSelectBoxProps } from '../types';
 
-class MonthSelectBox extends PureComponent { // eslint-disable-line react/prefer-stateless-function
+export default class MonthSelectBox extends PureComponent {
+  static defaultProps = {
+    mode: 'full',
+  }
+
   getMonths() {
     switch (this.props.mode) {
       case 'numbers':
@@ -25,6 +26,8 @@ class MonthSelectBox extends PureComponent { // eslint-disable-line react/prefer
     return _range(1, 13).map((month) => _padStart(month, 2, '0'));
   }
 
+  props: MonthSelectBoxProps
+
   render() {
     const months = this.getMonths();
 
@@ -39,15 +42,3 @@ class MonthSelectBox extends PureComponent { // eslint-disable-line react/prefer
     );
   }
 }
-
-MonthSelectBox.propTypes = {
-  children: PropTypes.element,
-  mode: PropTypes.string,
-};
-
-MonthSelectBox.defaultProps = {
-  children: null,
-  mode: 'full',
-};
-
-export default MonthSelectBox;

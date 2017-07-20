@@ -1,3 +1,5 @@
+/* @flow */
+
 import EmailField from '../';
 import createReduxFormField from '../../createReduxFormField';
 
