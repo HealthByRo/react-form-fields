@@ -2,9 +2,11 @@
 
 import React from 'react';
 import { shallow } from 'enzyme';
-import moment from 'moment';
-
 import MonthSelectBox from './index';
+import {
+  MONTHS,
+  MONTHS_SHORT,
+} from './constants';
 
 describe('<MonthSelectBox />', () => {
   let renderedMonthSelectBox;
@@ -18,7 +20,7 @@ describe('<MonthSelectBox />', () => {
   });
 
   it('should render options with full name of months', () => {
-    expectToHasOptions(renderedMonthSelectBox, moment.months());
+    expectToHasOptions(renderedMonthSelectBox, MONTHS);
   });
 
   it('should render children if any provided', () => {
@@ -46,7 +48,7 @@ describe('<MonthSelectBox mode="short" />', () => {
   });
 
   it('should render options with short name of months', () => {
-    expectToHasOptions(renderedMonthSelectBox, moment.monthsShort());
+    expectToHasOptions(renderedMonthSelectBox, MONTHS_SHORT);
   });
 });
 

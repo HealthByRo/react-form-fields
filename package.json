@@ -25,12 +25,8 @@
   },
   "pre-commit": "lint:staged",
   "dependencies": {
-    "immutable": "v4.0.0-rc.2",
-    "lodash": "^4.17.4",
-    "moment": "^2.18.1"
-  },
-  "peerDependencies": {
-    "react": "15.x"
+    "immutable": "^3.8.2",
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",
