@@ -1,6 +1,6 @@
 {
   "name": "react-form-fields",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "description": "Reusable form elements to use in both redux-form and regular form",
   "repository": "github:HealthByRo/react-form-fields",
   "author": "Roman Health",
