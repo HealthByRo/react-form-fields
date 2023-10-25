@@ -1,9 +1,12 @@
 /* @flow */
 
 import React, { PureComponent } from 'react';
-import moment from 'moment';
 import _range from 'lodash/range';
 import _padStart from 'lodash/padStart';
+import {
+  MONTHS,
+  MONTHS_SHORT,
+} from './constants';
 import type { MonthSelectBoxProps } from '../types';
 
 export default class MonthSelectBox extends PureComponent {
@@ -16,11 +19,12 @@ export default class MonthSelectBox extends PureComponent {
       case 'numbers':
         return this.getMonthsAsNumbers();
       case 'short':
-        return moment.monthsShort();
+        return MONTHS_SHORT;
       default:
-        return moment.months();
+        return MONTHS;
     }
   }
+
 
   getMonthsAsNumbers() {
     return _range(1, 13).map((month) => _padStart(month, 2, '0'));

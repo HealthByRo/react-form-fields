@@ -6,8 +6,8 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { isCollection } from 'immutable';
 import _isArray from 'lodash/isArray';
+import _get from 'lodash/get';
 
 export default function createReduxFormField(InputComponent) {
   function ReduxFormField(props) { // eslint-disable-line react/prefer-stateless-function
@@ -54,7 +54,7 @@ function getErrorsFromMeta(meta) {
 function mapInputValue(input) {
   const processedInput = { ...input };
 
-  if (isCollection(processedInput.value)) {
+  if (typeof _get(processedInput, 'value.toJS') === 'function') {
     processedInput.value = processedInput.value.toJS();
   }
 

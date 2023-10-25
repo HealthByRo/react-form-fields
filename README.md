@@ -1,7 +1,3 @@
-[![bitHound Overall Score](https://www.bithound.io/bitbucket/arabellatech/react-form-fields/badges/score.svg)](https://www.bithound.io/bitbucket/arabellatech/react-form-fields)
-[![bitHound Dependencies](https://www.bithound.io/bitbucket/arabellatech/react-form-fields/badges/dependencies.svg)](https://www.bithound.io/bitbucket/arabellatech/react-form-fields/develop/dependencies/npm)
-[![bitHound Dev Dependencies](https://www.bithound.io/bitbucket/arabellatech/react-form-fields/badges/devDependencies.svg)](https://www.bithound.io/bitbucket/arabellatech/react-form-fields/develop/dependencies/npm)
-[![bitHound Code](https://www.bithound.io/bitbucket/arabellatech/react-form-fields/badges/code.svg)](https://www.bithound.io/bitbucket/arabellatech/react-form-fields)
 
 # About
 `react-form-fields` contains predefined fields and helper to create your own custom field. Every field contains:
@@ -11,7 +7,7 @@
 3. errors
 
 # Installation
-1. Run `yarn add https://bitbucket.org/arabellatech/react-form-fields`
+1. Run `yarn add https://github.com/HealthByRo/react-form-fields`
 2. Done!
 
 # Usage
