@@ -1,4 +1,5 @@
 /* @flow */
+/*
 
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
@@ -29,3 +30,4 @@ storiesOf('Helpers: Errors', module)
       <Errors {...props} />
     );
   });
+  */

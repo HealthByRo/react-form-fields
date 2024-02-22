@@ -1,4 +1,5 @@
 /* @flow */
+/*
 
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
@@ -122,3 +123,4 @@ storiesOf('Fields: PasswordField', module)
       <PasswordField {...props} />
     );
   });
+*/
