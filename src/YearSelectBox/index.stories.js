@@ -1,4 +1,5 @@
 /* @flow */
+/*
 
 import React from 'react';
 import {
@@ -53,3 +54,4 @@ storiesOf('YearSelectBox', module)
       <option value="">select year</option>
     </YearSelectBox>
   ));
+  */

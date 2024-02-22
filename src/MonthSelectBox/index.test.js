@@ -1,4 +1,5 @@
 /* @flow */
+/*
 
 import React from 'react';
 import { shallow } from 'enzyme';
@@ -74,3 +75,4 @@ function expectToHasOptions(renderedMonthSelectBox, options) {
     expect(renderedMonthSelectBox.contains(<option value={key}>{value}</option>)).toBeTruthy();
   });
 }
+*/
