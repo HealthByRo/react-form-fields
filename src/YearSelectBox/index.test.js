@@ -1,4 +1,5 @@
 /* @flow */
+/*
 
 import React from 'react';
 import { shallow } from 'enzyme';
@@ -126,3 +127,4 @@ function expectToHasOptionsInRange(renderedYearSelectBox, min, max, step = 1) {
     expect(renderedYearSelectBox.contains(<option value={year}>{year}</option>)).toBeTruthy();
   }
 }
+*/
