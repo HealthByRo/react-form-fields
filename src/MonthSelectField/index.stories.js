@@ -1,4 +1,5 @@
 /* @flow */
+/*
 
 import React from 'react';
 import {
@@ -63,3 +64,4 @@ storiesOf('Fields: MonthSelectField', module)
       <MonthSelectField {...props} />
     );
   });
+  */
